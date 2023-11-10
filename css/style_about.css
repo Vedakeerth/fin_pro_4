@@ -216,7 +216,7 @@ html {
 
     font-size: 45px;
     background: linear-gradient(90deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 10%, rgba(31,246,238,1) 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   
   color: #205088;
@@ -401,7 +401,7 @@ html {
 
 .container2 h2{
   background: linear-gradient(93deg, rgba(74,255,251,1) 0%, rgba(49,200,217,1) 50%, rgba(49,163,217,1) 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -623,7 +623,7 @@ footer .content .link-boxes .box{
 .content .link-boxes .box .link_name{
   
   background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   
   font-size: 20px;
