@@ -14,8 +14,13 @@
 }
 
 body{
-    margin: 0;
-    overflow-x: hidden;
+  background-image: url('../Image/web-bg-1.png');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 /*---------------Go back to top button-------------*/
@@ -55,7 +60,6 @@ html {
 .header{
     min-height: 68px;
     width: 100%;
-    background-image: linear-gradient(rgb(255 255 255 / 10%),rgb(255 255 255 / 10%));
     position: relative;
     display: flex;
     align-items: center;
@@ -92,7 +96,7 @@ html {
     position: relative;
   }
   .nav-links ul li a{
-    color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
   }
@@ -167,12 +171,14 @@ html {
 
 .title{
   text-align: center;
+  color: #fff;
 }
 
 
 .title h1{
   font-size: 40px;
   text-align: center;
+  color: white;
 }
   
 .back-btn{
@@ -197,6 +203,7 @@ html {
 .what h1 {
   padding-top: 40px;
   font-size: 30px;
+  color: white;
 }
 
 .what img{
@@ -229,6 +236,7 @@ html {
   padding-left: 40px;
   padding-right: 455px;
   font-size: 16px;
+  color: white;
 }  
   
 /*----------*/  
@@ -237,6 +245,7 @@ html {
   text-align: center;
   font-size: 30px;
   padding-top: 50px;
+  color: white;
 }
 
 .why .border-pro {
@@ -300,6 +309,7 @@ border-radius: 10px;
   
 .layer h3{
   text-align: center;
+  color: white;
 }
 
 /*--------------*/
@@ -317,6 +327,7 @@ border-radius: 10px;
   padding-left: 25px;
   padding-right: 455px;
   font-size: 16px;
+  color: white;
 }
 
 .details-pd-1 {
@@ -336,6 +347,7 @@ border-radius: 10px;
 .what-1 h1 {
   padding-top: 40px;
   font-size: 30px;
+  color: white;
 }
 
 .what-1 img{
@@ -351,13 +363,14 @@ border-radius: 10px;
 .what-1 h2{
   font-size: medium;
   padding-top: 10px;
+  color: white;
 }  
   
 .pd-btn {
   display: inline-block;
   text-decoration: none;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   padding: 15px 36px;
   border-radius: 60px;
   font-size: 18px;
@@ -377,8 +390,8 @@ border-radius: 10px;
 .pd-btn-1 {
   display: inline-block;
   text-decoration: none;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   padding: 15px 36px;
   border-radius: 60px;
   font-size: 18px;
@@ -402,18 +415,6 @@ border-radius: 10px;
   
 
 
-
-
-
-
-
-
-
-
-
-
-  
-  
 
 /*---------------Footer-----------------*/
 
@@ -471,50 +472,50 @@ footer .content .top{
   background: #000000;
 }
 .top .media-icons a:nth-child(1):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(2){
   background: #000000;
 }
 .top .media-icons a:nth-child(2):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(3){
   background: #000000;
 }
 .top .media-icons a:nth-child(3):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(4){
   background: #000000;
 }
 .top .media-icons a:nth-child(4):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(5){
   background: #000000;
 }
 .top .media-icons a:nth-child(5):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(6){
   background: #000000;
 }
 .top .media-icons a:nth-child(6):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(7){
   background: #000000;
 }
 .top .media-icons a:nth-child(7):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 footer .content .link-boxes{
   width: 100%;
@@ -525,8 +526,12 @@ footer .content .link-boxes .box{
   width: calc(100% / 5 - 10px);
 }
 .content .link-boxes .box .link_name{
-  color: #fff;
-  font-size: 18px;
+  
+  background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
@@ -570,10 +575,6 @@ footer .content .link-boxes .box{
 
 
 
-
-
-
-
 .content .link-boxes .box li a:hover{
   opacity: 1;
   text-decoration: underline;
@@ -598,7 +599,7 @@ footer .content .link-boxes .box{
   font-size: 16px;
 }
 .link-boxes .input-box input[type="button"]{
-  background: #fff;
+  background:  linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
   color: #000000;
   border: none;
   font-size: 18px;
