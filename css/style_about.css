@@ -567,50 +567,50 @@ footer .content .top{
   background: #000000;
 }
 .top .media-icons a:nth-child(1):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(2){
   background: #000000;
 }
 .top .media-icons a:nth-child(2):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(3){
   background: #000000;
 }
 .top .media-icons a:nth-child(3):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(4){
   background: #000000;
 }
 .top .media-icons a:nth-child(4):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(5){
   background: #000000;
 }
 .top .media-icons a:nth-child(5):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(6){
   background: #000000;
 }
 .top .media-icons a:nth-child(6):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(7){
   background: #000000;
 }
 .top .media-icons a:nth-child(7):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 footer .content .link-boxes{
   width: 100%;
@@ -621,8 +621,12 @@ footer .content .link-boxes .box{
   width: calc(100% / 5 - 10px);
 }
 .content .link-boxes .box .link_name{
-  color: #fff;
-  font-size: 18px;
+  
+  background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
@@ -687,7 +691,7 @@ footer .content .link-boxes .box{
   font-size: 16px;
 }
 .link-boxes .input-box input[type="button"]{
-  background: #fff;
+  background:  linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
   color: #000000;
   border: none;
   font-size: 18px;

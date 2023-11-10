@@ -368,9 +368,8 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active,
-.dot:hover {
-  background-color: #00ffe7;
+.active-1, .dot:hover {
+  background-color: #00ffe5e1;
 }
 /* Fading animation */
 .fade {
