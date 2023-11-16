@@ -15,6 +15,12 @@ textarea {
 
 body,html{
   overflow-x: hidden;
+  background-image: url('../Image/web-bg-1.png');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 
@@ -23,7 +29,6 @@ body,html{
 .header{
   min-height: 68px;
   width: 100%;
-  background-image: linear-gradient(rgb(255 255 255 / 10%),rgb(255 255 255 / 10%));
   position: relative;
   display: flex;
   align-items: center;
@@ -61,7 +66,7 @@ nav{
   position: relative;
 }
 .nav-links ul li a{
-  color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 16px;
 }
@@ -140,6 +145,7 @@ section{
   display: flex;
   align-items: center;
   min-height: 100vh;
+  padding-top: 10vh;
 }
 
 .home-btn{
@@ -148,6 +154,7 @@ section{
   font-size: 30px;
   top: 5px;
   position: absolute;
+  color: white;
 }
 .home-btn a {
   color: #31a3d8;
@@ -471,7 +478,7 @@ section .container .contactform .formBox .inputBox input[type="submit"]:hover{
 
 .box-gmap{
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -479,7 +486,7 @@ section .container .contactform .formBox .inputBox input[type="submit"]:hover{
 }
 
 h1{
-  color: #333;
+  color: #ffffff;
   margin-bottom: 25px;
 }
 
@@ -546,50 +553,50 @@ footer .content .top{
   background: #000000;
 }
 .top .media-icons a:nth-child(1):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(2){
   background: #000000;
 }
 .top .media-icons a:nth-child(2):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(3){
   background: #000000;
 }
 .top .media-icons a:nth-child(3):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(4){
   background: #000000;
 }
 .top .media-icons a:nth-child(4):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(5){
   background: #000000;
 }
 .top .media-icons a:nth-child(5):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(6){
   background: #000000;
 }
 .top .media-icons a:nth-child(6):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(7){
   background: #000000;
 }
 .top .media-icons a:nth-child(7):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 footer .content .link-boxes{
   width: 100%;
@@ -600,8 +607,12 @@ footer .content .link-boxes .box{
   width: calc(100% / 5 - 10px);
 }
 .content .link-boxes .box .link_name{
-  color: #fff;
-  font-size: 18px;
+  
+  background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
@@ -642,6 +653,8 @@ footer .content .link-boxes .box{
   padding-bottom: 0.25rem;
 }
 
+
+
 .content .link-boxes .box li a:hover{
   opacity: 1;
   text-decoration: underline;
@@ -666,7 +679,7 @@ footer .content .link-boxes .box{
   font-size: 16px;
 }
 .link-boxes .input-box input[type="button"]{
-  background: #fff;
+  background:  linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
   color: #000000;
   border: none;
   font-size: 18px;

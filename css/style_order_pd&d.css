@@ -14,8 +14,12 @@
 }
 
 body{
-    margin: 0;
-    overflow-x: hidden;
+  background-image: url('../Image/web-bg-1.png');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 /*---------------Go back to top button-------------*/
@@ -55,7 +59,6 @@ html {
 .header{
     min-height: 68px;
     width: 100%;
-    background-image: linear-gradient(rgb(255 255 255 / 10%),rgb(255 255 255 / 10%));
     position: relative;
     display: flex;
     align-items: center;
@@ -92,7 +95,7 @@ html {
     position: relative;
   }
   .nav-links ul li a{
-    color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
   }
@@ -183,7 +186,7 @@ html {
     position: absolute;
     top: 160px;
     right: 385px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     color: rgb(87 150 153);
     padding-left: 20px;
     padding-right: 20px;
@@ -193,8 +196,8 @@ html {
 .btn {
   display: inline-block;
   text-decoration: none;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   padding: 15px 36px;
   border-radius: 60px;
   font-size: 18px;
@@ -310,8 +313,6 @@ a:hover {
 
 
   
-  
-
 /*---------------Footer-----------------*/
 
 footer{
@@ -368,50 +369,50 @@ footer .content .top{
   background: #000000;
 }
 .top .media-icons a:nth-child(1):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(2){
   background: #000000;
 }
 .top .media-icons a:nth-child(2):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(3){
   background: #000000;
 }
 .top .media-icons a:nth-child(3):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(4){
   background: #000000;
 }
 .top .media-icons a:nth-child(4):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(5){
   background: #000000;
 }
 .top .media-icons a:nth-child(5):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(6){
   background: #000000;
 }
 .top .media-icons a:nth-child(6):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .top .media-icons a:nth-child(7){
   background: #000000;
 }
 .top .media-icons a:nth-child(7):hover{
-  color: #000000;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 footer .content .link-boxes{
   width: 100%;
@@ -422,8 +423,12 @@ footer .content .link-boxes .box{
   width: calc(100% / 5 - 10px);
 }
 .content .link-boxes .box .link_name{
-  color: #fff;
-  font-size: 18px;
+  
+  background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
@@ -467,10 +472,6 @@ footer .content .link-boxes .box{
 
 
 
-
-
-
-
 .content .link-boxes .box li a:hover{
   opacity: 1;
   text-decoration: underline;
@@ -495,7 +496,7 @@ footer .content .link-boxes .box{
   font-size: 16px;
 }
 .link-boxes .input-box input[type="button"]{
-  background: #fff;
+  background:  linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
   color: #000000;
   border: none;
   font-size: 18px;
