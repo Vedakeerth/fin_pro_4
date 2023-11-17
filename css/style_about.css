@@ -197,7 +197,7 @@ html {
 #box-img1{
   height: 280px;
   width: auto;
-  margin-top: 15vh;
+  margin-top: 13.5vh;
   margin-left: 12px;
 }
  
@@ -443,11 +443,11 @@ ul.a {
   float: right;
   width: 52%;
   padding-top: 10px;
+  padding-left: 10px;
 }
 
 .content-section3 .content p{
-    margin-top: 10px; /*
-    margin-bottom: 25px; */
+    margin-top: 10px; 
     font-family: "Poppins" , sans-serif;
     font-size: 18px;
     line-height: 1.5;
@@ -466,12 +466,12 @@ ul.a {
   border: 1px solid rgb(30 96 238 / 70%);
   background: radial-gradient(circle at top left,transparent 340px, rgba(255,255,255, .3)),
   radial-gradient(circle at bottom right, transparent 340px, rgba(255,255,255, .3));
-  padding: 30px;
+  padding: 25px 30px 30px 30px;
   color: whitesmoke;
   text-align: justify;
   position: relative;
   box-shadow: -15px 15px 30px rgba(0,0,0,0.3);
-  height: 94vh;
+  height: 80vh;
 }
 /*----------------our accureditation-------------------*/ 
 
