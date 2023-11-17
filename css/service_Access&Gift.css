@@ -283,6 +283,10 @@ a:hover {
   margin-bottom: 60px;
 }
 
+.box .info {
+  background: rgba(0,0,0,.5);
+}
+
 .box{
   flex: 1 1 300px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -295,6 +299,7 @@ a:hover {
 .box .image{
   padding: 10px;
   text-align: center;
+  background: #5050503d;
 }
 
 .box .image img{
