@@ -216,7 +216,7 @@ html {
 
     font-size: 45px;
     background: linear-gradient(90deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 10%, rgba(31,246,238,1) 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
   color: #205088;
