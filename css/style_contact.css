@@ -125,7 +125,7 @@ nav .fa{
   }
   nav .fa{
       display: block;
-      color: #000000;
+      color: #ffffff;
       margin: 10px;
       font-size: 22px;
       cursor: pointer;
@@ -146,6 +146,7 @@ section{
   align-items: center;
   min-height: 100vh;
   padding-top: 10vh;
+  aspect-ratio: 56.25%;
 }
 
 .home-btn{
@@ -161,14 +162,14 @@ section{
   text-decoration: none;
 }
 
-
-
 section .container{
   position: relative;
   min-width: 1100px;
   min-height: 550px;
   display: flex;
   z-index: 1000;
+  background: #0000;
+  box-shadow: none;
 }
 
 section .container .contactinfo{
@@ -295,7 +296,7 @@ section .container .contactform .formBox .inputBox input,
 section .container .contactform .formBox .inputBox textarea{
   width: 100% !important;
   padding: 5px 0;
-  resize: none;
+  /* resize: none; */
   font-size: 14px;
   font-weight: 300;
   color: #333;
@@ -305,7 +306,8 @@ section .container .contactform .formBox .inputBox textarea{
 }
 
 section .container .contactform .formBox .inputBox textarea{
-  min-height: 120px;
+  height: 35px;
+  max-height: 180px;
 }
 
 section .container .contactform .formBox .inputBox span{
@@ -337,11 +339,17 @@ section .container .contactform .formBox .inputBox input[type="submit"]{
   background: #0f3959;
   color: #fff;
   border: none;
-  max-width: 150px;
+  max-width: 170px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-left: 40px;
 }
 
 section .container .contactform .formBox .inputBox input[type="submit"]:hover{
-  background: #31a3d8;
+  /* background: #31a3d8;
+  color: #0f3959; */
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 
 /*Responsive*/
@@ -353,6 +361,7 @@ section .container .contactform .formBox .inputBox input[type="submit"]:hover{
     min-width: auto;
     margin: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    /* aspect-ratio: 56.25%; */
   }
   .contactinfo{
     top: 0;
@@ -384,11 +393,6 @@ section .container .contactform .formBox .inputBox input[type="submit"]:hover{
   }
 } 
 
-
-
-
-
-
 .contactinfo .sci{
   display: flex;
 }
@@ -409,35 +413,35 @@ section .container .contactform .formBox .inputBox input[type="submit"]:hover{
 }
 .contactinfo .sci a:nth-child(1):hover{
   color: #0f3959;
-  background: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .contactinfo .sci a:nth-child(2){
   background: #0f3959;
 }
 .contactinfo .sci a:nth-child(2):hover{
   color: #0f3959;
-  background: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .contactinfo .sci a:nth-child(3){
   background: #0f3959;
 }
 .contactinfo .sci a:nth-child(3):hover{
   color: #0f3959;
-  background: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .contactinfo .sci a:nth-child(4){
   background: #0f3959;
 }
 .contactinfo .sci a:nth-child(4):hover{
   color: #0f3959;
-  background: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 .contactinfo .sci a:nth-child(5){
   background: #0f3959;
 }
 .contactinfo .sci a:nth-child(5):hover{
   color: #0f3959;
-  background: #fff;
+  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
 }
 /*-------Alert Message--------*/
 .message{
@@ -886,7 +890,7 @@ section .container .contactinfo {
   /* z-index: 1; */
   background: #0f3959;
   padding: 35px;
-  margin-left: 246px;
+  margin-left: 70vh;
   box-shadow: 13px 20px 20px rgba(0, 0, 0, 0.2), -13px -20px 20px rgba(0, 0, 0, 0.2);
 }
 section .container .contactform {
@@ -917,7 +921,7 @@ section .container {
   width: 375px;
   left: 35px;
   position: relative;
-  height: 90vh;
+  height: 100vh;
 }
 .contactinfo.aos-init.aos-animate {
   width: 375px;
@@ -926,12 +930,29 @@ section .container {
 section .container .contactform .formBox {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
+section .container .contactform .formBox .inputBox textarea{
+  height: 35px;
+  max-height: 50px;
+}
+
 section .container .contactform .formBox .inputBox.w50 {
   width: 100%;
+  margin-bottom: 20px auto 15px auto;
+}
+section .container .contactform .formBox .inputBox.w100 {
+  margin-bottom: 20px;
+  padding-top: 5px;
 }
 section .container {
   margin-top: 0px;
+}
+
+.box-gmap{
+  height: 180vh;
+  padding-top: 5vh;
+  padding-bottom: 15vh;
 }
 h1 {
   font-size: 25px;
@@ -942,7 +963,8 @@ footer .content {
 
 section .container .contactinfo {
   width: 40%;
-  margin-left: 340px;
+  margin-left: 88vh;
+  height: auto;
 }
 
 section .container .contactform {

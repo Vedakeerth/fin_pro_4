@@ -160,7 +160,7 @@ html {
     }
     nav .fa{
         display: block;
-        color: #000000;
+        color: #ffffff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -278,13 +278,9 @@ a:hover {
   flex-wrap: wrap;
   margin: 10px;
   margin-top: 0px;
-  margin-left: 30px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 40px;
   margin-bottom: 60px;
-}
-
-.box .info {
-  background: rgba(0,0,0,.5);
 }
 
 .box{
@@ -299,7 +295,6 @@ a:hover {
 .box .image{
   padding: 10px;
   text-align: center;
-  background: #5050503d;
 }
 
 .box .image img{

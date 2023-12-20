@@ -112,7 +112,7 @@ nav img{
     padding: 8px 12px;
 }
 .nav-links ul li a{
-    color: rgb(199, 199, 199);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
     display: block;
@@ -458,7 +458,7 @@ h1 ,p ,h3{
   box-shadow: 10px 5px 20px 5px #31A3D9;
 }
 .layer:hover{
-    background: rgba(30, 231, 238, 0.47);
+    background: rgba(30, 231, 238, 0.7);
 }
 
 
@@ -752,7 +752,7 @@ h1 ,p ,h3{
   border-radius: 20px;
   box-shadow: -5px 3px 20px rgba(0,0,0,0.3);
   box-shadow: 10px 5px 20px 5px #31A3D9;
-
+  height: 95vh;
 }
 .testimonial img{
   width: 100px;
@@ -955,7 +955,7 @@ footer .content .link-boxes .box{
 .content .link-boxes .box .link_name{
   
   background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
   font-size: 20px;
@@ -1150,32 +1150,45 @@ footer .bottom-details .bottom_text{
 
 /*------Scoial Media Links----*/
 .icon-bar {
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	z-index: 10;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: 10;
 }
 
-.icon-bar a {   
-	text-decoration: none;
-	width: 157px;
-	/*  background: #3b5999; */
-	color: #fff;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 10px;
+.icon-bar a {
+  text-decoration: none;
+  width: 157px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
   padding-right: 7px;
   font-size: 16px;
-	transform: translateX(-110px);
-	-webkit-transform: translateX(-110px);
-	-ms-transform: translateX(-110px);
-	transition: all 0.5s linear;
-	-webkit-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
+  transform: translateX(-110px);
+  -webkit-transform: translateX(-110px);
+  -ms-transform: translateX(-110px);
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  position: relative; /* Ensure a positioning context for pseudo-element */
 }
+
+/* Pseudo-element for click-through and hover effects */
+.icon-bar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through */
+  z-index: -1; /* Place behind the text content */
+}
+
 
 .facebook {
 	background: #3b5998;
@@ -1221,7 +1234,16 @@ a:hover {
 	-ms-transform: translateX(0);
 }
 
+@media (max-width: 800px){
+  .icon-bar a{
+    font-size: 12px;
+    padding: 5px;
+    padding-right: 7px;
+  }
+}
+@media  (max-width: 400px){
 
+}
 
 /*Responsive For Mobile & Table*/
 

@@ -134,7 +134,7 @@ html {
     }
     nav .fa{
         display: block;
-        color: #000000;
+        color: #ffffff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -197,7 +197,7 @@ html {
 #box-img1{
   height: 280px;
   width: auto;
-  margin-top: 13.5vh;
+  margin-top: 15vh;
   margin-left: 12px;
 }
  
@@ -208,7 +208,7 @@ html {
   font-family: sans-serif;
   font-size: 17px;
   line-height: 1.5;
-  color: #000000;
+  color: #ffffff;
   text-align: justify;
   width: 53%;
 }
@@ -216,7 +216,7 @@ html {
 
     font-size: 45px;
     background: linear-gradient(90deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 10%, rgba(31,246,238,1) 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   
   color: #205088;
@@ -247,8 +247,12 @@ html {
 .box1{
     width: 480px;
     height: 220px;
-    background: radial-gradient(circle at top left,transparent 340px, rgba(255,255,255, .3)),
-    radial-gradient(circle at bottom right, transparent 340px, rgba(255,255,255, .3));
+    background: #000000a8;
+    border: .5px solid #00aceddb;
+    border-radius: 40px;
+    box-shadow: -10px 10px 20px 5px #31A3D9;
+    /* background: radial-gradient(circle at top left,transparent 340px, rgba(255,255,255, .3)),
+    radial-gradient(circle at bottom right, transparent 340px, rgba(255,255,255, .3)); */
     margin: 77px;
     padding: 20px;
     color: rgb(0, 0, 0);
@@ -257,13 +261,17 @@ html {
     position: bottom;
     margin-left: -530px;
     margin-top: 130px;
-    box-shadow: -15px 15px 30px rgba(0,0,0,0.3);
+    /* box-shadow: -15px 15px 30px rgba(0,0,0,0.3); */
 }   
 .box2{
   width: 480px;
   height: 220px;
-  background: radial-gradient(circle at top left,transparent 340px, rgba(255,255,255, .3)),
-  radial-gradient(circle at bottom right, transparent 340px, rgba(255,255,255, .3));
+  background: #000000a8;
+  border: .5px solid #00aceddb;
+  border-radius: 40px;
+  box-shadow: 10px 10px 20px 5px #31A3D9;
+  /* background: radial-gradient(circle at top left,transparent 340px, rgba(255,255,255, .3)),
+  radial-gradient(circle at bottom right, transparent 340px, rgba(255,255,255, .3)); */
   margin: 77px;
   padding: 20px;
   color: rgb(0, 0, 0);
@@ -272,13 +280,14 @@ html {
   position: bottom;
   margin-left: 670px;  
   margin-top: -297px; 
-  box-shadow: -15px 15px 30px rgba(0,0,0,0.3);
+  /* box-shadow: -15px 15px 30px rgba(0,0,0,0.3); */
 }
 .box3{
   box-shadow: -15px 15px 30px rgba(0, 0, 0, );
   border-radius: 15px;
   border: 1px solid rgba(30, 231, 238, 0.7);
-  background: linear-gradient(93deg, rgba(255,255,255,0.6628851369649422) 0%, rgba(157,166,171,0.4247898988697041) 50%, rgba(0,0,0,0.47240894648875176) 100%);
+  background: #000000a8;
+  /* background: linear-gradient(93deg, rgba(255,255,255,0.6628851369649422) 0%, rgba(157,166,171,0.4247898988697041) 50%, rgba(0,0,0,0.47240894648875176) 100%); */
   padding: 20px 30px 30px 30px;
   color: whitesmoke;
   text-align: justify;
@@ -401,7 +410,7 @@ html {
 
 .container2 h2{
   background: linear-gradient(93deg, rgba(74,255,251,1) 0%, rgba(49,200,217,1) 50%, rgba(49,163,217,1) 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -443,11 +452,11 @@ ul.a {
   float: right;
   width: 52%;
   padding-top: 10px;
-  padding-left: 10px;
 }
 
 .content-section3 .content p{
-    margin-top: 10px; 
+    margin-top: 10px; /*
+    margin-bottom: 25px; */
     font-family: "Poppins" , sans-serif;
     font-size: 18px;
     line-height: 1.5;
@@ -466,12 +475,12 @@ ul.a {
   border: 1px solid rgb(30 96 238 / 70%);
   background: radial-gradient(circle at top left,transparent 340px, rgba(255,255,255, .3)),
   radial-gradient(circle at bottom right, transparent 340px, rgba(255,255,255, .3));
-  padding: 25px 30px 30px 30px;
+  padding: 30px;
   color: whitesmoke;
   text-align: justify;
   position: relative;
   box-shadow: -15px 15px 30px rgba(0,0,0,0.3);
-  height: 80vh;
+  height: 94vh;
 }
 /*----------------our accureditation-------------------*/ 
 
@@ -499,7 +508,6 @@ ul.a {
 .image-section4 {
   background: #fff3;
   border-radius: 15px;
-  height: 60vh;
 }
 
 .image-section4 img{
@@ -507,7 +515,6 @@ ul.a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 45px;
 }
 
 
@@ -625,7 +632,7 @@ footer .content .link-boxes .box{
 .content .link-boxes .box .link_name{
   
   background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   
   font-size: 20px;
