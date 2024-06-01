@@ -143,6 +143,9 @@ nav img{
 .text-box h1{
     font-size: 60px;
 }
+.text-box h1::first-letter{
+  color: #31A3D9;
+}
 .text-box p{
     margin: 10px 0 40px;
     font-size: 24px;
@@ -752,7 +755,7 @@ h1 ,p ,h3{
   border-radius: 20px;
   box-shadow: -5px 3px 20px rgba(0,0,0,0.3);
   box-shadow: 10px 5px 20px 5px #31A3D9;
-  height: 95vh;
+  height: 75vh;
 }
 .testimonial img{
   width: 100px;
@@ -762,14 +765,19 @@ h1 ,p ,h3{
 .name{
   font-size: 20px;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 20px 0px 10px 0px;
   color: #fff;
 }
 .stars{
   color: #31a3d8;
   margin-bottom: 20px;
 }
-
+.testimonial p{
+  font-size: 14px;
+}
+.testimonial .name {
+  font-size: 25px;
+}
 
 @media screen and (max-width:960px) {
 .col{
@@ -955,7 +963,7 @@ footer .content .link-boxes .box{
 .content .link-boxes .box .link_name{
   
   background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   
   font-size: 20px;
