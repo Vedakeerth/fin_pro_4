@@ -34,7 +34,7 @@
 <section class="header">
   <nav>
   <a href="index.html">
-    <img class="logo" src="Icons/logo.png">
+    <img class="logo" src="Icons/logo-b.png" id="name-logo">
   </a>
   <div class="nav-links" id="navLinks">
   <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -44,6 +44,7 @@
       <li><a href="products.html">Products</a></li>
       <li><a href="service.html">Servies</a></li>
       <li><a href="contact.html">Contact Us</a></li>
+      <img src="Icons/moon-b.png" id="icon">
     </ul>
   </div>
   <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
@@ -89,9 +90,9 @@
   <div class="printer-s" data-aos="fade-left">
     <img src="Image/product/scanner.jpg" alt="">
     <h1>3D Scanner</h1>
-    <div class="border-about-1"></div>
-    <p id="print-s">3D Scanners <br> <br> <br> <br> </p>
-      <a href="order_pd&d.html" class="about-btn" id="print-s-1">Coming Soon...</a>
+    <div class="border-about"></div>
+    <p>3D Scanners <br> <br> <br> <br> </p>
+      <a href="order_pd&d.html" class="about-btn">Coming Soon...</a>
 </div>
 
 <div class="printer-p" data-aos="fade-right">
@@ -180,9 +181,7 @@
 
     
     <!------------------------ .Js --------------------------------->
-
-    <script src="tilt.js"></script>
-
+    
     <script async src="https://whatsform.com/launcher.js" id="wf-widget" data-id="J-bN44" data-message="Get a Instant Quote" ></script>
 
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
@@ -265,6 +264,24 @@
     <script>
       AOS.init();
     </script>
+
+<!-- dark / light toogle Switch -->
+<script>
+  var icon = document.getElementById("icon");
+  var logo = document.getElementById("name-logo");
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "Icons/sun.png";
+      logo.src = "Icons/logo.png";
+    }else{
+      icon.src = "Icons/moon-b.png";
+      logo.src = "Icons/logo-b.png";
+    }
+  }
+
+</script>
 
 </body>
 <!--------Float Whatsapp----------->

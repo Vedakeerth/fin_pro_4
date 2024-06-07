@@ -35,7 +35,7 @@
 
         <nav>
           <a href="index.html">
-              <img class="logo" src="Icons/logo.png">
+              <img class="logo" src="Icons/logo-b.png" id="name-logo">
           </a>
           <div class="nav-links" id="navLinks">
               <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -45,6 +45,7 @@
                   <li><a href="products.html">Products</a></li>
                   <li><a href="service.html">Servies</a></li>
                   <li><a href="contact.html">Contact Us</a></li>
+                  <img src="Icons/moon-b.png" id="icon">
               </ul>
           </div>
           <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
@@ -60,7 +61,7 @@
         <a href="index.html" class="back-btn">Home</a>/Our Service
         </div>
       <div class="details">
-        <div class="por" data-tilt data-aos="flip-left">
+        <div class="por" data-aos="flip-left">
             <div class="process-details">
               <img src="Image/Application/3D.png" alt="img-1">
               </div>
@@ -76,7 +77,7 @@
             </div>
 
             
-            <div class="por" data-tilt data-aos="flip-right">
+            <div class="por" data-aos="flip-right">
               <div class="process-details1">
                 <img src="Image/Application/RE.png" alt="img-1">
               </div>
@@ -94,7 +95,7 @@
             </div>
           </div>
           <div class="details-1">
-            <div class="por" data-tilt data-aos="flip-left">
+            <div class="por" data-aos="flip-left">
                 <div class="process-details2">
                   <img src="Image/Application/fp.png" alt="img-1">
                 </div>
@@ -111,14 +112,14 @@
                 </div>
                 
             
-            <div class="por" data-tilt data-aos="flip-right">
+            <div class="por" data-aos="flip-right">
                   <div class="process-details">
                     <img src="Image/Application/3D-scanner.png" alt="img-1">
                   </div>
                   
                     <div class="pro-name">3D Scanner</div>
                   <div class="border-pro"></div>
-                    <div class="por_2" id="height">
+                    <div class="por_2">
                     <p>Vaelinsa is a 3D print company that utilizes 3D scanning technology to create high-quality, accurate models.  
                       With a focus on quality, reliability, and customer satisfaction, Vaelinsa's 3D scanning service is the ideal choice for anyone looking to bring their ideas to life with 3D printing.
                       <br> <br> <br> <br> <br> <br> <br> 
@@ -228,8 +229,6 @@
     
     <!------------------------ .Js --------------------------------->
     
-    <script src="tilt.js"></script>
-
     <script async src="https://whatsform.com/launcher.js" id="wf-widget" data-id="J-bN44" data-message="Get a Instant Quote" ></script>
     
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
@@ -312,6 +311,24 @@
     <script>
       AOS.init();
     </script>
+
+<!-- dark / light toogle Switch -->
+<script>
+  var icon = document.getElementById("icon");
+  var logo = document.getElementById("name-logo");
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "Icons/sun.png";
+      logo.src = "Icons/logo.png";
+    }else{
+      icon.src = "Icons/moon-b.png";
+      logo.src = "Icons/logo-b.png";
+    }
+  }
+</script>
+
 
 </body>
 <!--------Float Whatsapp----------->

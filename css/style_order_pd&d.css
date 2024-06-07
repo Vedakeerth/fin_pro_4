@@ -14,12 +14,8 @@
 }
 
 body{
-  background-image: url('../Image/web-bg-1.png');
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover; 
-  background-repeat: no-repeat;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 /*---------------Go back to top button-------------*/
@@ -59,6 +55,7 @@ html {
 .header{
     min-height: 68px;
     width: 100%;
+    background-image: linear-gradient(rgb(255 255 255 / 10%),rgb(255 255 255 / 10%));
     position: relative;
     display: flex;
     align-items: center;
@@ -95,7 +92,7 @@ html {
     position: relative;
   }
   .nav-links ul li a{
-    color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
     text-decoration: none;
     font-size: 16px;
   }
@@ -154,7 +151,7 @@ html {
     }
     nav .fa{
         display: block;
-        color: #ffffff;
+        color: #000000;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -186,7 +183,7 @@ html {
     position: absolute;
     top: 160px;
     right: 385px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     color: rgb(87 150 153);
     padding-left: 20px;
     padding-right: 20px;
@@ -196,8 +193,8 @@ html {
 .btn {
   display: inline-block;
   text-decoration: none;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
   padding: 15px 36px;
   border-radius: 60px;
   font-size: 18px;
@@ -313,6 +310,8 @@ a:hover {
 
 
   
+  
+
 /*---------------Footer-----------------*/
 
 footer{
@@ -369,50 +368,50 @@ footer .content .top{
   background: #000000;
 }
 .top .media-icons a:nth-child(1):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(2){
   background: #000000;
 }
 .top .media-icons a:nth-child(2):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(3){
   background: #000000;
 }
 .top .media-icons a:nth-child(3):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(4){
   background: #000000;
 }
 .top .media-icons a:nth-child(4):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(5){
   background: #000000;
 }
 .top .media-icons a:nth-child(5):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(6){
   background: #000000;
 }
 .top .media-icons a:nth-child(6):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(7){
   background: #000000;
 }
 .top .media-icons a:nth-child(7):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 footer .content .link-boxes{
   width: 100%;
@@ -423,12 +422,8 @@ footer .content .link-boxes .box{
   width: calc(100% / 5 - 10px);
 }
 .content .link-boxes .box .link_name{
-  
-  background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  font-size: 20px;
+  color: #fff;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
@@ -472,6 +467,10 @@ footer .content .link-boxes .box{
 
 
 
+
+
+
+
 .content .link-boxes .box li a:hover{
   opacity: 1;
   text-decoration: underline;
@@ -496,7 +495,7 @@ footer .content .link-boxes .box{
   font-size: 16px;
 }
 .link-boxes .input-box input[type="button"]{
-  background:  linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  background: #fff;
   color: #000000;
   border: none;
   font-size: 18px;
@@ -602,7 +601,7 @@ footer .bottom-details .bottom_text{
 
 
 #preloader{
-  background: #000000 url(Image/loader.gif) no-repeat center center;
+  background: #000000 url(../Image/loader1.gif) no-repeat center center;
   background-size: 15%;
   height: 100vh;
   width: 100%;

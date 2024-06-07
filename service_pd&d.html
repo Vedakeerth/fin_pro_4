@@ -35,7 +35,7 @@
 
         <nav>
           <a href="index.html">
-              <img class="logo" src="Icons/logo.png">
+              <img class="logo" src="Icons/logo-b.png" id="name-logo">
           </a>
           <div class="nav-links" id="navLinks">
               <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -45,6 +45,7 @@
                   <li><a href="products.html">Products</a></li>
                   <li><a href="service.html">Servies</a></li>
                   <li><a href="contact.html">Contact Us</a></li>
+                  <img src="Icons/moon-b.png" id="icon">
               </ul>
           </div>
           <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
@@ -65,7 +66,7 @@
       <div class="what">
         
         <h1>What is Product Design & Development ?</h1>
-        <img src="Image/service/Pd & D/what.png" alt="">
+        <img src="Image/service/Pd & D/what.jpg" alt="">
         <div class="border-pro"></div>
         <p> 
           &emsp; &emsp; Product design and development in 3D printing involves the creation and optimization of digital models for the purpose of 3D printing physical products. 
@@ -107,31 +108,31 @@
   <h1>Why You Choose Us</h1>
   <div class="border-pro"></div>
     <div class="row">
-      <div class="serives-col" data-tilt data-aos="flip-up">
+      <div class="serives-col" data-aos="flip-up">
         <img src="Image/service/Pd & D/Quality.png">
           <div class="layer">
             <h3>Quality Assurance</h3>
           </div>
         </div>
-        <div class="serives-col" data-tilt  data-aos="flip-up">
+        <div class="serives-col" data-aos="flip-up">
           <img src="Image/service/Pd & D/Expertise.png">
           <div class="layer">
             <h3>Expertise</h3>
           </div>
         </div>
-        <div class="serives-col" data-tilt data-aos="flip-up">
+        <div class="serives-col" data-aos="flip-up">
           <img src="Image/service/Pd & D/customize.png">
           <div class="layer">
             <h3>Customization</h3>
           </div>
         </div>
-        <div class="serives-col" data-tilt data-aos="flip-up">
+        <div class="serives-col" data-aos="flip-up">
           <img src="Image/service/Pd & D/Cost-effective.png">
           <div class="layer">
             <h3>Cost-effective</h3>
           </div>
         </div>
-        <div class="serives-col" data-tilt data-aos="flip-up">
+        <div class="serives-col" data-aos="flip-up">
           <img src="Image/service/Pd & D/Timeliness.png">
           <div class="layer">
             <h3>Timeliness</h3>
@@ -143,7 +144,7 @@
 
   <div class="details-pd-1">
     <div class="what-1" data-aos="fade-right">
-      <img src="Image/service/Pd & D/cando.png" alt="">
+      <img src="Image/service/Pd & D/cando.jpg" alt="">
       <h1>What can we Do ?</h1>
       <div class="border-pro"></div>
       <h2>Quality Assurance :</h2>
@@ -263,8 +264,6 @@
 </footer>
 
     <!------------------------ .Js --------------------------------->
-
-    <script src="tilt.js"></script>
  
     <script async src="https://whatsform.com/launcher.js" id="wf-widget" data-id="J-bN44" data-message="Get a Instant Quote" ></script>
 
@@ -348,6 +347,25 @@
     <script>
       AOS.init();
     </script>
+    
+<!-- dark / light toogle Switch -->
+<script>
+  var icon = document.getElementById("icon");
+  var logo = document.getElementById("name-logo");
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "Icons/sun.png";
+      logo.src = "Icons/logo.png";
+    }else{
+      icon.src = "Icons/moon-b.png";
+      logo.src = "Icons/logo-b.png";
+    }
+  }
+
+</script>
+
 
 </body>
 <!--------Float Whatsapp----------->

@@ -49,7 +49,7 @@
               <li><a href="products.html">Products</a></li>
               <li><a href="service.html">Servies</a></li>
               <li><a href="contact.html">Contact Us</a></li>
-              <img src="Icons/sun.png" id="icon">
+              <img src="Icons/moon.png" id="icon">
             </ul>
         </div>
         <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
@@ -244,7 +244,7 @@
 </div>
 
 
-<!---------Reviwe------>
+<!---------Review------>
 <div class="testimonials">
   <div class="inner">
     <h1>Testimonials</h1>
@@ -537,6 +537,7 @@ function addAnimation() {
     });
   });
 }
+
 </script>
 
 <!-- dark / light toogle Switch -->
@@ -546,9 +547,9 @@ function addAnimation() {
   icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
-      icon.src = "Icons/moon.png";
-    }else{
       icon.src = "Icons/sun.png";
+    }else{
+      icon.src = "Icons/moon.png";
     }
   }
 

@@ -29,7 +29,7 @@
 
   <nav>
     <a href="index.html">
-        <img class="logo" src="Icons/logo.png">
+        <img class="logo" src="Icons/logo-b.png"  id="name-logo">
     </a>
     <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -39,6 +39,7 @@
             <li><a href="products.html">Products</a></li>
             <li><a href="service.html">Servies</a></li>
             <li><a href="contact.html">Contact Us</a></li>
+            <img src="Icons/moon-b.png" id="icon">
         </ul>
     </div>
     <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
@@ -131,7 +132,7 @@
         <span>Mobile Number</span>
       </div>
       <div class="inputBox w100">
-        <textarea id="msg" name="comments,&nbsp;questions" style="rows: 1;" required></textarea>
+        <textarea id="msg" name="comments,&nbsp;questions" rows="4" required></textarea>
         <span>Write your message here......</span>
       </div>
       <div class="inputBox w100">
@@ -152,7 +153,8 @@
 
 <!----------------Google map location--------------------->
 
-<div class="box-gmap" >
+<div class="box-gmap" data-aos="fade-down">
+
   <h1>Our Location</h1>
 
   <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.418039863197!2d76.94597!3d11.082189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDA0JzU1LjkiTiA3NsKwNTYnNDUuNSJF!5e0!3m2!1sen!2sin!4v1680459844681!5m2!1sen!2sin" 
@@ -287,8 +289,23 @@
     loader.style.display = "none";
   })
 </script>
+<!-- dark / light toogle Switch -->
+<script>
+  var icon = document.getElementById("icon");
+  var logo = document.getElementById("name-logo");
 
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "Icons/sun.png";
+      logo.src = "Icons/logo.png";
+    }else{
+      icon.src = "Icons/moon-b.png";
+      logo.src = "Icons/logo-b.png";
+    }
+  }
 
+</script>
 
 </body>
 

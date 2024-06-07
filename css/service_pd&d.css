@@ -13,16 +13,16 @@
     font-family: "Poppins" , sans-serif;
 }
 
-body{
-  background-image: url('../Image/web-bg-1.png');
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-image: var(--background-img);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-size: cover; 
   background-repeat: no-repeat;
-  overflow-x: hidden;
 }
-
 /*---------------Go back to top button-------------*/
 html { 
   scroll-behavior: smooth;
@@ -96,7 +96,7 @@ html {
     position: relative;
   }
   .nav-links ul li a{
-    color: rgb(255, 255, 255);
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 16px;
   }
@@ -155,7 +155,7 @@ html {
     }
     nav .fa{
         display: block;
-        color: #ffffff;
+        color: #000000;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -166,19 +166,39 @@ html {
     }
   }
   
-  
+/* toggle switch  */
+#icon{
+  width: 45px;
+  height: auto;
+  cursor: pointer;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+  margin-bottom: -10px;
+}
+
+:root{
+  --primary-color: #edfcfc;
+  --secondary-color: #212121;
+  --background-img: none;
+  --review-bg: none;  /*for review bg*/
+}
+.dark-theme{
+  --primary-color: #212121;
+  --secondary-color: #edfcfc;
+  --background-img: url('../Image/bg1-B.jpg');
+  --review-bg: #2828289e; /*for review bg*/
+}  
 /*---------------------------------------------------*/
 
 .title{
   text-align: center;
-  color: #fff;
 }
 
 
 .title h1{
   font-size: 40px;
   text-align: center;
-  color: white;
+  color: var(--secondary-color);
 }
   
 .back-btn{
@@ -203,7 +223,7 @@ html {
 .what h1 {
   padding-top: 40px;
   font-size: 30px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .what img{
@@ -236,7 +256,7 @@ html {
   padding-left: 40px;
   padding-right: 455px;
   font-size: 16px;
-  color: white;
+  color: var(--secondary-color);
 }  
   
 /*----------*/  
@@ -245,7 +265,7 @@ html {
   text-align: center;
   font-size: 30px;
   padding-top: 50px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .why .border-pro {
@@ -309,7 +329,7 @@ border-radius: 10px;
   
 .layer h3{
   text-align: center;
-  color: white;
+  color: var(--secondary-color);
 }
 
 /*--------------*/
@@ -327,7 +347,7 @@ border-radius: 10px;
   padding-left: 25px;
   padding-right: 455px;
   font-size: 16px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .details-pd-1 {
@@ -347,7 +367,7 @@ border-radius: 10px;
 .what-1 h1 {
   padding-top: 40px;
   font-size: 30px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .what-1 img{
@@ -363,14 +383,14 @@ border-radius: 10px;
 .what-1 h2{
   font-size: medium;
   padding-top: 10px;
-  color: white;
+  color: var(--secondary-color);
 }  
   
 .pd-btn {
   display: inline-block;
   text-decoration: none;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   padding: 15px 36px;
   border-radius: 60px;
   font-size: 18px;
@@ -390,8 +410,8 @@ border-radius: 10px;
 .pd-btn-1 {
   display: inline-block;
   text-decoration: none;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   padding: 15px 36px;
   border-radius: 60px;
   font-size: 18px;
@@ -415,6 +435,18 @@ border-radius: 10px;
   
 
 
+
+
+
+
+
+
+
+
+
+
+  
+  
 
 /*---------------Footer-----------------*/
 
@@ -472,50 +504,50 @@ footer .content .top{
   background: #000000;
 }
 .top .media-icons a:nth-child(1):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(2){
   background: #000000;
 }
 .top .media-icons a:nth-child(2):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(3){
   background: #000000;
 }
 .top .media-icons a:nth-child(3):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(4){
   background: #000000;
 }
 .top .media-icons a:nth-child(4):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(5){
   background: #000000;
 }
 .top .media-icons a:nth-child(5):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(6){
   background: #000000;
 }
 .top .media-icons a:nth-child(6):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(7){
   background: #000000;
 }
 .top .media-icons a:nth-child(7):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 footer .content .link-boxes{
   width: 100%;
@@ -526,12 +558,8 @@ footer .content .link-boxes .box{
   width: calc(100% / 5 - 10px);
 }
 .content .link-boxes .box .link_name{
-  
-  background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  font-size: 20px;
+  color: #fff;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
@@ -575,6 +603,10 @@ footer .content .link-boxes .box{
 
 
 
+
+
+
+
 .content .link-boxes .box li a:hover{
   opacity: 1;
   text-decoration: underline;
@@ -599,7 +631,7 @@ footer .content .link-boxes .box{
   font-size: 16px;
 }
 .link-boxes .input-box input[type="button"]{
-  background:  linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  background: #fff;
   color: #000000;
   border: none;
   font-size: 18px;
@@ -705,7 +737,7 @@ footer .bottom-details .bottom_text{
 
 
 #preloader{
-  background: #000000 url(Image/loader.gif) no-repeat center center;
+  background: #000000 url(../Image/loader1.gif) no-repeat center center;
   background-size: 15%;
   height: 100vh;
   width: 100%;

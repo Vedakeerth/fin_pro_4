@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -18,7 +17,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  background-image: url('Image/web-bg-1.png');
+  background-image: var(--background-img);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -32,7 +31,7 @@ html {
 
 /*-----------PreLoader-----------*/
 #preloader{
-  background: #000000 url(Image/loader1.gif) no-repeat center center;
+  background: #000000 url("../Image/loader1.gif") no-repeat center center;
   background-size: 205%;
   height: 100vh;
   width: 100%;
@@ -46,7 +45,7 @@ html {
 .header{
     min-height: 85px;
     width: 100%;
-    background-image: linear-gradient(rgb(255 255 255 / 10%),rgb(255 255 255 / 10%));
+    /* background-image: linear-gradient(rgb(255 255 255 / 10%),rgb(255 255 255 / 10%)); */
     position: relative;
     display: flex;
     align-items: center;
@@ -84,7 +83,7 @@ html {
     position: relative;
   }
   .nav-links ul li a{
-    color: rgb(51, 51, 51);
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 16px;
   }
@@ -154,12 +153,44 @@ html {
     }
   }
 
+/* toggle switch  */
+#icon{
+  width: 45px;
+  height: auto;
+  cursor: pointer;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+  margin-bottom: -10px;
+}
+
+:root{
+  --primary-color: #edfcfc;
+  --secondary-color: #212121;
+  --background-img: none;
+  --review-bg: none;  /*for review bg*/
+}
+.dark-theme{
+  --primary-color: #212121;
+  --secondary-color: #edfcfc;
+  --background-img: url('../Image/bg1-B.jpg');
+  --review-bg: #2828289e; /*for review bg*/
+}
+/*------------Theme color Switching---------------*/
+.serives h1, .title h1, .testimonials h1 {
+  color: var(--secondary-color);
+}
+p, h3{
+  color: var(--secondary-color);
+}
+
+
 /*-------------About Us---------------*/
 
 .home-btn{
   text-decoration: none;
   text-align: center;
   font-size: 20px;
+  color: var(--secondary-color);
 }
 
 .home-btn a{
@@ -171,12 +202,10 @@ html {
 .section{
     width: 100%;
     min-height: 60vh;
-    background-color: #ffffff;
 }
 .section2{
     width: 100%;
     min-height: 70vh;
-    background-color: #ffffff;
 }
 .container{
     width: 90%;
@@ -216,12 +245,12 @@ html {
   font-family: sans-serif;
   font-size: 17px;
   line-height: 1.5;
-  color: #000000;
+  color: var(--secondary-color);
   text-align: justify;
   width: 53%;
 }
 .content-section .content h2{
-  color: #205088;
+  color: #38b6ff;
   font-size: 45px;
 }
 .button *{
@@ -283,10 +312,7 @@ html {
   box-shadow: -15px 15px 30px rgba(0, 0, 0, );
   border-radius: 15px;
   border: 1px solid rgba(30, 231, 238, 0.7);
-  background: radial-gradient(circle at top left,transparent 340px, rgba(255,255,255, .3)),
-  radial-gradient(circle at bottom right, transparent 340px, rgba(255,255,255, .3));
   padding: 20px 30px 30px 30px;
-  color: whitesmoke;
   text-align: justify;
   position: relative;
   box-shadow: -15px 15px 30px rgba(0,0,0,0.3);
@@ -315,13 +341,13 @@ html {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 7px;
-    color: #205088;
+    color: #38b6ff;
   }
   
   .pro-name{
     font-size: 22px;
     font-weight: 500;
-  
+    color: var(--secondary-color);
     padding-top: 28px;
   }
   
@@ -413,7 +439,6 @@ html {
 
 .section3{
     width: 98%;
-    background-color: #ffffff;
 }
 
 .container3{
@@ -451,7 +476,7 @@ ul.a {
     font-family: "Poppins" , sans-serif;
     font-size: 16px;
     line-height: 1.3;
-    color:#000000;
+    color:var(--secondary-color);
     text-align: justify;   
 }
 .box4 p{
@@ -461,10 +486,11 @@ ul.a {
 .box4 .points{
   font-size: 16px;
   line-height: 1.4;
+  color: var(--secondary-color);
 }
 
 .box4 h2{
-    color: #205088;
+    color: #38b6ff;
     font-size: 30px;
     text-align: center;
 }
@@ -472,11 +498,8 @@ ul.a {
   box-shadow: -15px 15px 30px rgba(0, 0, 0, );
   border-radius: 15px;
   border: 1px solid rgb(30 96 238 / 70%);
-  background: radial-gradient(circle at top left,transparent 340px, rgba(255,255,255, .3)),
-  radial-gradient(circle at bottom right, transparent 340px, rgba(255,255,255, .3));
   padding: 30px;
   margin: 0px 20px 0px 60px;
-  color: whitesmoke;
   text-align: justify;
   position: relative;
   box-shadow: -15px 15px 30px rgba(0,0,0,0.3);
@@ -485,24 +508,23 @@ ul.a {
 /*----------------our accureditation-------------------*/ 
 
  .title4 h1{
-  font-size: 35px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 0px;
-  color: #205088;
+    font-size: 35px;
+    text-align: center;
+   margin-top: 100px;
+   margin-bottom: 20px;
+   color: #38b6ff;
 }
 
-.section4{
-  width: 100%;
-  background-color: #ffffff;
+ .section4{
+    width: 100%;
 }
 
 .container4{
     width: 90%;
     display: block;
     margin: auto;
-    /* padding-top: 30px;
-    padding-bottom: 70px; */
+    padding-top: 30px;
+    padding-bottom: 70px;
 } 
 
 .image-section4 img{
@@ -522,7 +544,7 @@ ul.a {
   display: flex;
   flex-wrap: wrap;
   gap: 9rem;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .scroller[data-animated="true"] {
@@ -851,7 +873,7 @@ footer .bottom-details .bottom_text{
 
 
 #preloader{
-  background: #000000 url(Image/loader.gif) no-repeat center center;
+  background: #000000 url(../Image/loader1.gif) no-repeat center center;
   background-size: 15%;
   height: 100vh;
   width: 100%;
@@ -990,8 +1012,11 @@ a:hover {
   width: 100%;
 }
   #box-img {
-    height: 310px;
-    width: auto;
+    height: auto;
+    width: 81vh;
+}
+.box4{
+  height: 150vh;
 }
 .content-section .content p {
   width: 100%;
@@ -1030,13 +1055,13 @@ a:hover {
 .box1 {
   width: 480px;
   height: auto;
-  left: 45%;
+  left: 52%;
   position: relative;
 }
 .box2 {
   width: 480px;
   height: auto;
-  margin: 77px;
+  margin: 50px;
 }
 .text-choose {
   text-align: justify;
@@ -1044,7 +1069,8 @@ a:hover {
   width: auto;
 }
 #box-img1 {
-  height: 310px;
+  height: 42vh;
+  width: auto;
 }
 
 
@@ -1063,6 +1089,7 @@ a:hover {
 }
 .section3 {
   padding-bottom: 50px;
+  padding-top: 10vh;
 }
 
 .section4 {
@@ -1102,9 +1129,6 @@ a:hover {
   padding-left: 30px;
 }
 
-
-
-
 .home-btn {
   font-size: 18px;
 }
@@ -1112,7 +1136,7 @@ a:hover {
   font-size: 25px;
 }
 #box-img {
-  height: 170px;
+  height: 70vh;
 }
 .content-section .content p {
   font-size: 15px;
@@ -1153,7 +1177,7 @@ a:hover {
 }
 .box1 {
   width: 380px;
-  left: 82%;
+  left: 63%;
   border: 1px solid #44e9ff;
   border-radius: 10px;
   height: auto;
@@ -1191,12 +1215,13 @@ a:hover {
   font-size: 30px;
 }
 #box-img1 {
-  height: 170px;
+  height: 38vh;
+  margin: 25px 0px 0px 0px;
 }
 .box4 p {
   font-size: 13px;
 }
-.a li {
+.box4 .points {
   font-size: 13px;
 }
 .container4 {
@@ -1211,6 +1236,14 @@ a:hover {
 .image-section4 img {
   width: 80%;
   padding-top: 20px;
+}
+.section3 {
+    padding-bottom: 50px;
+    padding-top: 10vh;
+}
+.section4 {
+    padding-bottom: 50px;
+    min-height: auto;
 }
 footer .content {
   max-width: 1490px;

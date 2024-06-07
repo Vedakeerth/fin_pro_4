@@ -12,8 +12,10 @@
     font-family: "Poppins" , sans-serif;
 }
 
-body{
-  background-image: url('../Image/web-bg-1.png');
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-image: var(--background-img);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -94,7 +96,7 @@ html {
     position: relative;
   }
   .nav-links ul li a{
-    color: rgb(255, 255, 255);
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 16px;
   }
@@ -153,7 +155,7 @@ html {
     }
     nav .fa{
         display: block;
-        color: #ffffff;
+        color: #000000;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -164,7 +166,29 @@ html {
     }
   }
   
-  
+/* toggle switch  */
+#icon{
+  width: 45px;
+  height: auto;
+  cursor: pointer;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+  margin-bottom: -10px;
+}
+
+:root{
+  --primary-color: #edfcfc;
+  --secondary-color: #212121;
+  --background-img: none;
+  --review-bg: none;  /*for review bg*/
+}
+.dark-theme{
+  --primary-color: #212121;
+  --secondary-color: #edfcfc;
+  --background-img: url('../Image/bg1-B.jpg');
+  --review-bg: #2828289e; /*for review bg*/
+}
+
 /*---------------------------------------------------*/
 
 .title-nav{
@@ -172,7 +196,7 @@ html {
   text-align: center;
   font-size: 30px;
   padding-bottom: 35px;
-  color: white;
+  color: var(--secondary-color);
 }
   
 .title-nav a{
@@ -184,21 +208,18 @@ html {
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  min-height: 110vh;
+  min-height: 87vh;
   flex-direction: column;
-  
-  background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
-  background: transparent; 
-  
-  
+  background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc); 
   filter: blur(5px); 
+  padding-bottom: 10vh;
 }
   
 .container{
   max-width: 650px;
   width: 100%;
   padding: 30px;
-  background: gray;
+  background: #fff;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 20px 20px 24px, 
               rgba(149, 157, 165, 0.2) -20px -20px 24px;
@@ -396,50 +417,50 @@ footer .content .top{
   background: #000000;
 }
 .top .media-icons a:nth-child(1):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(2){
   background: #000000;
 }
 .top .media-icons a:nth-child(2):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(3){
   background: #000000;
 }
 .top .media-icons a:nth-child(3):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(4){
   background: #000000;
 }
 .top .media-icons a:nth-child(4):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(5){
   background: #000000;
 }
 .top .media-icons a:nth-child(5):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(6){
   background: #000000;
 }
 .top .media-icons a:nth-child(6):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 .top .media-icons a:nth-child(7){
   background: #000000;
 }
 .top .media-icons a:nth-child(7):hover{
-  color: #fff;
-  background: linear-gradient(45deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  color: #000000;
+  background: #fff;
 }
 footer .content .link-boxes{
   width: 100%;
@@ -450,12 +471,8 @@ footer .content .link-boxes .box{
   width: calc(100% / 5 - 10px);
 }
 .content .link-boxes .box .link_name{
-  
-  background:linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 20%, rgba(31,246,238,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  font-size: 20px;
+  color: #fff;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
@@ -501,6 +518,8 @@ footer .content .link-boxes .box{
 
 
 
+
+
 .content .link-boxes .box li a:hover{
   opacity: 1;
   text-decoration: underline;
@@ -525,7 +544,7 @@ footer .content .link-boxes .box{
   font-size: 16px;
 }
 .link-boxes .input-box input[type="button"]{
-  background:  linear-gradient(80deg, rgba(15,17,233,1) 0%, rgba(49,163,217,1) 50%, rgba(31,246,238,1) 100%);
+  background: #fff;
   color: #000000;
   border: none;
   font-size: 18px;
@@ -631,7 +650,7 @@ footer .bottom-details .bottom_text{
 
 
 #preloader{
-  background: #000000 url(Image/loader.gif) no-repeat center center;
+  background: #000000 url(../Image/loader1.gif) no-repeat center center;
   background-size: 15%;
   height: 100vh;
   width: 100%;

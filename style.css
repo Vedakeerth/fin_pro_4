@@ -23,7 +23,7 @@ body{
 body {
   margin: 0;
   overflow-x: hidden;
-  background-image: url('Image/web-bg-1.png');
+  background-image: var(--background-img);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -37,7 +37,6 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
 
 /*------------back to top buttom-------------------*/
 #progress {
@@ -147,6 +146,7 @@ nav img{
 .text-box h1::first-letter{
   color: #31A3D9;
 }
+
 .text-box p{
     margin: 10px 0 40px;
     font-size: 24px;
@@ -241,16 +241,16 @@ nav img{
 }
 
 :root{
-  --primary-color: #212121;
-  --secondary-color: #edfcfc;
-  --background-img: url('Image/bg1-B.jpg');
-  --review-bg: #2828289e; /*for review bg*/
-}
-.dark-theme{
   --primary-color: #edfcfc;
   --secondary-color: #212121;
   --background-img: none;
-  --review-bg: none;  /*for review bg*/
+  --review-bg: none; /*for review bg*/
+}
+.dark-theme{
+  --primary-color: #212121;
+  --secondary-color: #edfcfc;
+  --background-img: url('Image/bg1-B.jpg');
+  --review-bg:  #2828289e;  /*for review bg*/
 }
 /*------------Theme color Switching---------------*/
 .serives h1, .title h1, .testimonials h1 {
@@ -259,6 +259,7 @@ nav img{
 p, h3{
   color: var(--secondary-color);
 }
+
 
 /*-------------About Us----------------*/
 
@@ -386,9 +387,6 @@ img {
   font-size: 36px;
   font-weight: bolder;
 }
-.slide-dot {
-  margin-top: 15px;
-}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -444,10 +442,6 @@ img {
 
 
 /*--------Features--------*/
-h1 ,p ,h3{
-  color: white;
-}
-
 
 
 .serives{
@@ -557,7 +551,7 @@ h1 ,p ,h3{
 }
 
 .pro-name{
-  color:  var(--secondary-color);
+  color: var(--secondary-color);
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 500;
@@ -705,11 +699,6 @@ h1 ,p ,h3{
   filter: grayscale(100%);
 }
 
-
-
-
-
-
 .details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -746,14 +735,15 @@ h1 ,p ,h3{
   text-align: justify;
 }
 
-/*-------Review-----*/
+/*-------------------Review---------------------*/
+
 .testimonials{
   padding: 20px 0;
   color: #000000;
   text-align: center;
 }
 .inner{
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
@@ -773,7 +763,7 @@ h1 ,p ,h3{
 }
 .col{
   flex: 33.33%;
-  max-width: 33.33%;
+  max-width: 55vh;
   box-sizing: border-box;
   padding: 15px 15px 35px 15px;
 }
@@ -784,7 +774,7 @@ h1 ,p ,h3{
   border-radius: 20px;
   box-shadow: -5px 3px 20px rgba(0,0,0,0.3);
   box-shadow: 10px 5px 20px 5px #31A3D9;
-  height: 75vh;
+  height: 80vh;
 }
 .testimonial img{
   width: 100px;
@@ -794,31 +784,28 @@ h1 ,p ,h3{
 .name{
   font-size: 20px;
   text-transform: uppercase;
-  margin: 20px 0px 10px 0px;
-  color: #fff;
+  margin: 20px 0;
+  color: var(--secondary-color);
 }
 .stars{
   color: #31a3d8;
   margin-bottom: 20px;
 }
-.testimonial p{
-  font-size: 14px;
-}
-.testimonial .name {
-  font-size: 25px;
-}
+
 
 @media screen and (max-width:960px) {
 .col{
   flex: 100%;
-  max-width: 100%;
 }
 }
 
 @media screen and (max-width:600px) {
 .col{
   flex: 100%;
-  max-width: 100%;
+  max-width: 60vh;
+}
+.testimonial{
+  height: 85vh;
 }
 }
 
@@ -880,6 +867,12 @@ img#review-box {
     transform: translate(calc(-50% - 0.5rem));
   }
 }
+@media screen and (max-width:600px) {
+  .scroller[data-animated="true"] .scroller__inner {
+    height: 95vh;
+  }
+}
+
 
 /*-------------Industry Revolution 4.0--------------*/
 
@@ -936,7 +929,6 @@ img#review-box {
   }
 
 }
-
 
 /*---------------Footer-----------------*/
 
@@ -1093,13 +1085,6 @@ footer .content .link-boxes .box{
   display: inline-block;
   padding-bottom: 0.25rem;
 }
-
-
-
-
-
-
-
 
 .content .link-boxes .box li a:hover{
   opacity: 1;
