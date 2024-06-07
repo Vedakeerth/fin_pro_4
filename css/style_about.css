@@ -485,24 +485,24 @@ ul.a {
 /*----------------our accureditation-------------------*/ 
 
  .title4 h1{
-    font-size: 35px;
-    text-align: center;
-   margin-top: 100px;
-   margin-bottom: 20px;
-   color: #205088;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  color: #205088;
 }
 
- .section4{
-    width: 100%;
-    background-color: #ffffff;
+.section4{
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .container4{
     width: 90%;
     display: block;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 70px;
+    /* padding-top: 30px;
+    padding-bottom: 70px; */
 } 
 
 .image-section4 img{

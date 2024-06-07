@@ -360,6 +360,9 @@ img {
   font-size: 36px;
   font-weight: bolder;
 }
+.slide-dot {
+  margin-top: 15px;
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
