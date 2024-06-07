@@ -49,6 +49,7 @@
               <li><a href="products.html">Products</a></li>
               <li><a href="service.html">Servies</a></li>
               <li><a href="contact.html">Contact Us</a></li>
+              <img src="Icons/sun.png" id="icon">
             </ul>
         </div>
         <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
@@ -249,8 +250,11 @@
     <h1>Testimonials</h1>
     <div class="border"></div>
 
-    <div class="scroller" data-direction="right" data-speed="slow">
-      <div class="scroller__inner">
+<!---------auto scroll----------->
+<div class="scroller" data-direction="right" data-speed="slow">
+  <div class="scroller__inner">
+
+      <div class="col" >
         <div class="testimonial">
           <img src="Image/Review/p1.jpg" alt="">
           <div class="name">Nandhana</div>
@@ -269,41 +273,10 @@
             I highly recommend Vaelinsa to anyone in need of reliable and high-quality 3D printing equipment.          
           </p>
         </div>
-        
-        <img src="Image/about/msme.png" alt="" />
-        <img src="Image/about/mechnido logo.png" alt="https://www.mechnido.com/" />
-        <img src="Image/about/Mseed.png" alt="https://mseed.in/" />
-        <img src="Image/about/mechnido logo.png" alt="https://www.mechnido.com/" />
-        <img src="Image/about/msme.png" alt="https://mseed.in/" />
-        <img src="Image/about/mechnido logo.png" alt="https://www.mechnido.com/" />
-        <img src="Image/about/msme.png" alt="https://mseed.in/" />
-        <!-- <img src="https://i.pravatar.cc/150?img=4" alt="" /> -->
-        <!-- <img src="https://i.pravatar.cc/150?img=5" alt="" /> -->
-        <!-- <img src="https://i.pravatar.cc/150?img=6" alt="" /> -->
       </div>
 
-      
-    <!-- <div class="row" data-aos="fade-right"> -->
-
-
-          <img src="Image/Review/p1.jpg" alt="">
-          <div class="name">Nandhana</div>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-
-          <p>
-            Vaelinsa has been a fantastic company to work with for my 3D printing needs. 
-            Their machines are top-notch and have exceeded my expectations in terms of print quality and speed. 
-            Additionally,
-            I highly recommend Vaelinsa to anyone in need of reliable and high-quality 3D printing equipment.          
-          </p>
-
-
+      <div class="col" >
+        <div class="testimonial">
           <img src="Image/Review/p2.jpg" alt="">
           <div class="name">Akash</div>
           <div class="stars">
@@ -320,8 +293,11 @@
             Their scanners have been instrumental in creating 3D models of my products, making it easier to design and improve my products. 
             Overall, Vaelinsa has been a reliable and efficient partner for my 3D printing needs.
           </p>
+        </div>
+      </div>
 
-
+      <div class="col" >
+        <div class="testimonial">
           <img src="Image/Review/p3.jpg" alt="">
           <div class="name">Maria</div>
           <div class="stars">
@@ -338,10 +314,11 @@
             Vaelinsa's customer service has also been top-notch, answering all of my questions and providing helpful tips for using the machine. 
             I highly recommend Vaelinsa for anyone in the market for a quality 3D printer.
           </p>
-
-      <!-- </div> -->
+        </div>
+      </div>
     </div>
   </div>
+</div>
 </div>
 
 
@@ -560,6 +537,20 @@ function addAnimation() {
     });
   });
 }
+</script>
+
+<!-- dark / light toogle Switch -->
+<script>
+  var icon = document.getElementById("icon");
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "Icons/moon.png";
+    }else{
+      icon.src = "Icons/sun.png";
+    }
+  }
 
 </script>
 

@@ -143,6 +143,7 @@ nav img{
 .text-box h1{
     font-size: 60px;
 }
+
 .text-box h1::first-letter{
   color: #31A3D9;
 }
@@ -232,7 +233,32 @@ nav img{
   }
 
 }
+/* toggle switch  */
+#icon{
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
 
+:root{
+  --primary-color: #212121;
+  --secondary-color: #edfcfc;
+  --background-img: url('Image/bg1-B.jpg');
+  --review-bg: #2828289e; /*for review bg*/
+}
+.dark-theme{
+  --primary-color: #edfcfc;
+  --secondary-color: #212121;
+  --background-img: none;
+  --review-bg: none;  /*for review bg*/
+}
+/*------------Theme color Switching---------------*/
+.serives h1, .title h1, .testimonials h1 {
+  color: var(--secondary-color);
+}
+p, h3{
+  color: var(--secondary-color);
+}
 
 /*-------------About Us----------------*/
 
@@ -337,7 +363,7 @@ img {
 }
 /* Caption text */
 .text {
-  color: #000;
+  color: var(--secondary-color);
   text-shadow: -0.5px -0.5px 0 #919191, 0.5px -0.5px 0 #919191, -0.5px 0.5px 0 #919191, 0.5px 0.5px 0 #919191;
   font-size: 20px;
   padding: 8px 12px;
@@ -531,7 +557,7 @@ h1 ,p ,h3{
 }
 
 .pro-name{
-  color: white;
+  color:  var(--secondary-color);
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 500;
@@ -752,7 +778,7 @@ h1 ,p ,h3{
   padding: 15px 15px 35px 15px;
 }
 .testimonial{
-  background: #2828289e;
+  background: var(--review-bg);
   padding: 30px;
   border: 1px solid rgba(30, 231, 238, 0.7);
   border-radius: 20px;
@@ -796,6 +822,64 @@ h1 ,p ,h3{
 }
 }
 
+/*----------------------Auto Scroll in Testimonials----------------------------*/
+
+img#review-box {
+  height: 160px;
+}
+
+.scroller {
+  max-width: 100%;
+}
+
+.scroller__inner {
+  padding-block: 0rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  height: 85vh;
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 50s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
 
 /*-------------Industry Revolution 4.0--------------*/
 
