@@ -392,7 +392,7 @@ img {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10px 2px 0 2px;
   background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
@@ -776,6 +776,9 @@ img {
   box-shadow: 10px 5px 20px 5px #31A3D9;
   height: 80vh;
 }
+.testimonial p{
+  font-size: 14px;
+}
 .testimonial img{
   width: 100px;
   height: 100px;
@@ -839,7 +842,7 @@ img#review-box {
 }
 
 .scroller[data-animated="true"] .scroller__inner {
-  height: 85vh;
+  height: 90vh;
   width: max-content;
   flex-wrap: nowrap;
   animation: scroll var(--_animation-duration, 50s)
