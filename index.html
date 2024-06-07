@@ -281,10 +281,11 @@
         <!-- <img src="https://i.pravatar.cc/150?img=5" alt="" /> -->
         <!-- <img src="https://i.pravatar.cc/150?img=6" alt="" /> -->
       </div>
-    </div>
+
+      
     <!-- <div class="row" data-aos="fade-right"> -->
-      <div class="col" data-tilt>
-        <div class="testimonial">
+
+
           <img src="Image/Review/p1.jpg" alt="">
           <div class="name">Nandhana</div>
           <div class="stars">
@@ -301,11 +302,8 @@
             Additionally,
             I highly recommend Vaelinsa to anyone in need of reliable and high-quality 3D printing equipment.          
           </p>
-        </div>
-      </div>
 
-      <div class="col" data-tilt data-aos="slide-up">
-        <div class="testimonial">
+
           <img src="Image/Review/p2.jpg" alt="">
           <div class="name">Akash</div>
           <div class="stars">
@@ -322,11 +320,8 @@
             Their scanners have been instrumental in creating 3D models of my products, making it easier to design and improve my products. 
             Overall, Vaelinsa has been a reliable and efficient partner for my 3D printing needs.
           </p>
-        </div>
-      </div>
 
-      <div class="col" data-tilt data-aos="fade-left">
-        <div class="testimonial">
+
           <img src="Image/Review/p3.jpg" alt="">
           <div class="name">Maria</div>
           <div class="stars">
@@ -343,7 +338,7 @@
             Vaelinsa's customer service has also been top-notch, answering all of my questions and providing helpful tips for using the machine. 
             I highly recommend Vaelinsa for anyone in the market for a quality 3D printer.
           </p>
-        </div>
+
       <!-- </div> -->
     </div>
   </div>
@@ -538,7 +533,35 @@
   AOS.init();
 </script>
 
+<script>
+  const scrollers = document.querySelectorAll(".scroller");
 
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+
+</script>
 
 
 </body>
