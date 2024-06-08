@@ -281,11 +281,11 @@ html {
     transition: 1s;
   }
    
-.blur{
+/* .blur{
     font-size: 40px;
     color: transparent;
     text-shadow: 0 0 6px #000;
-}  
+}   */
 
 /*------Scoial Media Links----*/
 .icon-bar {
