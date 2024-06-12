@@ -1224,9 +1224,9 @@ footer .bottom-details .bottom_text{
 
 #preloader{
   background: #000000 url(Image/loader1.gif) no-repeat center center;
-  background-size: 20%;
-  height: 100vh;
-  width: 100%;
+  /* background-size: 20%; */
+  height: 125%;
+  width: auto;
   position: fixed;
   z-index: 100;
 }
@@ -1424,6 +1424,11 @@ a:hover {
 
 
 @media (max-width: 700px) {
+
+  #preloader{
+    height: 200vh;
+  }
+
   .header{
     height: 100vh;
     background-position: center;
