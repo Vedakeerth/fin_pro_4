@@ -961,6 +961,11 @@ a:hover {
 
 
 /*Responsive For mobile*/
+@media screen and (max-width: 900px) {
+  .icon-bar{
+    display: none;
+  }
+}
 
 @media screen and (max-width: 720px) { 
   .section2 {

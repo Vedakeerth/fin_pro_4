@@ -148,7 +148,7 @@ nav img{
 }
 
 .text-box p{
-    margin: 10px 0 40px;
+    margin: 10px 0 0px;
     font-size: 24px;
     color: #fff;
 }
@@ -168,6 +168,12 @@ nav img{
     border: 1px solid rgba(30, 231, 238, 0.7);
     background: rgba(30, 231, 238, 0.7);
     transition: 1s;
+}
+#mini-fount{
+  font-size: 18px;
+  margin: 10px 0 40px;
+  color: #fff;
+  font-family: "Poppins" , sans-serif;
 }
 
 @media(max-width: 1600px){
@@ -706,8 +712,8 @@ img {
   gap: 40px;
   padding: 20px;
   padding-top: 35px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .details-1 {
   display: grid;
@@ -715,8 +721,8 @@ img {
   grid-template-rows: repeat(1, 1fr);
   gap: 40px;
   padding: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 50px;
 }
 
@@ -731,7 +737,7 @@ img {
 }
 
 .por_2 {
-  margin: 20px;
+  margin: 45px 25px 35px 20px;
   text-align: justify;
 }
 
@@ -1319,9 +1325,10 @@ a:hover {
 
 @media (max-width: 800px){
   .icon-bar a{
-    font-size: 12px;
+    /* font-size: 12px;
     padding: 5px;
-    padding-right: 7px;
+    padding-right: 7px; */
+    display: none;
   }
 }
 @media  (max-width: 400px){
@@ -1337,6 +1344,11 @@ a:hover {
     background-position: center;
   }
   
+}
+@media (max-width: 1015px){
+  .slideshow-container {
+    width: 90%;
+  } 
 }
 
 @media (max-width: 900px){
@@ -1355,9 +1367,10 @@ a:hover {
     padding: 8px 25px;
     font-size: 14px;
   }
-  .slideshow-container.aos-init.aos-animate {
-    margin-left: 50px;
-    margin-right: 40px;
+  .slideshow-container {
+    /* margin-left: 50px;
+    margin-right: 40px; */
+    width: 85%;
   }
   .serives {
     width: 100%;
@@ -1390,6 +1403,7 @@ a:hover {
     width: 200px;
     border-radius: 5px;
     left: 95px;
+    top: 35px;
   }
   .process-details-1 {
     top: 20px;
@@ -1402,6 +1416,7 @@ a:hover {
     width: 200px;
     border-radius: 5px;
     left: 97px;
+    top: 35px;
   }
   .process-details-2 {
     top: 18px;
@@ -1415,9 +1430,9 @@ a:hover {
     position: relative;
   }
   .border-pro-4 {
-    left: 116;
+    left: 97px;
     width: 181px;
-    top: 18px;
+    top: 25px;
     border-radius: 5px;
   }
 }
@@ -1467,7 +1482,7 @@ a:hover {
 }
 img {
   width: auto;
-  height: 350px;
+  height: 280px;
   background-size: 100% 70%;
 }
 
