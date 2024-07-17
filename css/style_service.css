@@ -396,18 +396,13 @@ p{
 .por_2 {
   margin: 20px;
   text-align: justify;
-}
-
-.por_2-1 {
-  margin: 20px;
-  padding-top: 24px;
-  text-align: justify;
-  padding-bottom: 25px;
+  height: 45.5vh;
 }
 
 .por_2-2 {
   margin: 20px;
   text-align: justify;
+  height: 24.5vh;
 }
 
 .process-btn{
