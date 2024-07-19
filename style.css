@@ -903,7 +903,7 @@ img#review-box {
 }
 
 
-.industry h4{
+.industry h3{
   text-transform: uppercase;
   font-weight: bolder;
   font-family: 'Teko', sans-serif;
@@ -1157,6 +1157,7 @@ footer .bottom-details .bottom_text{
 }
 .bottom-details .bottom_text a{
   margin-right: 10px;
+  color: #c5c9c8;
 }
 @media (max-width: 900px) {
   footer .content .link-boxes{
@@ -1545,7 +1546,7 @@ padding-top: 70px;
   font-size: 13px;
   padding: 10px;
 }
-.industry h4{
+.industry h3{
   font-size: 40px;
   
 }
@@ -1670,7 +1671,7 @@ padding-top: 70px;
   width: 150px;
 }
 
-.industry h4 {
+.industry h3 {
   font-size: 27px;
   top: 95px;
 }
