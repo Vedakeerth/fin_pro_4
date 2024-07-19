@@ -1562,7 +1562,11 @@ padding-top: 70px;
 }
 
 .process {
-  padding-left: 30px;
+  padding-left: 18px;
+  padding-right: 5px;
+}
+.por_2 {
+  margin: 45px 5px 35px 5px;
 }
 
 
