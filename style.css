@@ -77,7 +77,8 @@ html {
 }
 
 .logo{
-    height: auto;
+    height: 70px;
+    width: 200px;
 }
 
 nav{
