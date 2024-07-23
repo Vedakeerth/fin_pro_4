@@ -305,14 +305,16 @@ a:hover {
   margin-left: 30px;
   margin-right: 20px;
   margin-bottom: 60px;
+  padding-left: 15px;
 }
 
 .box{
-  flex: 1 1 300px;
+  flex: 1 1 280px;
   border: 1px solid rgba(0, 0, 0, .3);
   position: relative;
   overflow: hidden;
   margin: 20px;
+  backdrop-filter: blur(10px);
 }
 
 .box .image{
@@ -321,15 +323,15 @@ a:hover {
 }
 
 .box .image img{
-  height: 200px;
-  width: 250px;
+  height: 250px;
+  width: auto;
   object-fit: cover;
   filter: drop-shadow(0 3px 5px rgba(0,0,0,.7));
 }
 
 .box .info .title{
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .box .info .subInfo{
@@ -359,7 +361,7 @@ a:hover {
 .box .overlayer{
   position: absolute;
   top: 0; left: 0;
-  height: 223px;
+  height: 280px;
   width: 100%;
   background: rgba(0, 0, 0, .3);
   display: flex;
@@ -392,8 +394,32 @@ a:hover {
   transform: translateY(0px);
 }
 
+@media (max-width: 900px){
+  .box .image img{
+    height: 265px;
+  }
+  .box .overlayer{
+    height: 290px;
+  }
+}
 
+@media (max-width: 700px){
+  .box .image img{
+    height: 260px;
+  }
+  .box  .overlayer{
+    height: 285px;
+  }
+}
 
+@media (max-width: 400px){
+  .box .image img{
+    height: 280px;
+  }
+  .box .overlayer{
+    height: 285px;
+  }
+}
 
 
 
@@ -625,6 +651,9 @@ footer .bottom-details .bottom_text{
   footer .content .link-boxes .input-box{
     width: 40%;
     margin-top: 10px;
+  }
+  .icon-bar{
+    display: none;
   }
 }
 @media (max-width: 700px){
