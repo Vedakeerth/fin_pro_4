@@ -137,21 +137,26 @@ html {
         font-size: 34px;
     }
     .nav-links ul li a{
-      color: #e3dede;
+      color: #0e0e0e;
     }
     .nav-links ul li{
         display: block;
     }
     .nav-links{
-        position: absolute;
-        background: #0d467a;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
+      position: absolute;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+      background: rgba(193, 187, 187, 0.3);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8.4px);
+      -webkit-backdrop-filter: blur(8.4px);
+      border: 1px solid rgba(193, 187, 187, 0.3);
+
     }
     nav .fa{
         display: block;
@@ -567,6 +572,7 @@ footer .bottom-details .bottom_text{
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .bottom-details .bottom_text span,
 .bottom-details .bottom_text a{
@@ -664,6 +670,9 @@ footer .bottom-details .bottom_text{
 
 
 @media screen and (max-width: 768px) {
+  .icon-bar{
+    display: none;
+  }
   .title-nav{
     font-size: 25px;
   }
