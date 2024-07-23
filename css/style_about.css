@@ -1092,10 +1092,7 @@ a:hover {
   font-size: 45px;
   margin-top: 0px;
 }
-.section3 {
-  padding-bottom: 50px;
-  padding-top: 10vh;
-}
+
 
 .section4 {
   padding-bottom: 50px;
@@ -1141,7 +1138,8 @@ a:hover {
   font-size: 25px;
 }
 #box-img {
-  height: 70vh;
+  height: auto;
+  width: 295px;
 }
 .content-section .content p {
   font-size: 15px;
@@ -1153,7 +1151,7 @@ a:hover {
 .box3 {
   padding-top: 10px;
   border-radius: 16px;
-  padding-bottom: 35px;
+  padding-bottom: 10px;
 }
 .button a {
   padding: 8px 25px;
@@ -1168,10 +1166,10 @@ a:hover {
   flex-direction: column;
 }
 .container2 {
-  /* top: 0px; */
+  /* top: 0px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   flex-direction: column;
   /* left: 2px; */
   /* padding-right: 0px; */
@@ -1181,8 +1179,8 @@ a:hover {
 
 }
 .box1 {
-  width: 380px;
-  left: 63%;
+  width: 360px;
+  left: 86%;
   border: 1px solid #44e9ff;
   border-radius: 10px;
   height: auto;
@@ -1196,8 +1194,8 @@ a:hover {
   text-align: justify;
 }
 .box2 {
-  width: 390px;
-  left: 8px;
+  width: 360px;
+  /* left: 8px; */
   position: relative;
   margin-top: 10px;
   border: 1px solid #44e9ff;
@@ -1214,13 +1212,14 @@ a:hover {
 }
 .box4 {
   border-radius: 20px;
-  height: 90vh;
+  height: 122vh;
 }
 .box4 h2 {
   font-size: 30px;
 }
 #box-img1 {
-  height: 38vh;
+  height: auto;
+  width: 275px;
   margin: 25px 0px 0px 0px;
 }
 .box4 p {
@@ -1242,13 +1241,13 @@ a:hover {
   width: 80%;
   padding-top: 20px;
 }
-.section3 {
-    padding-bottom: 50px;
-    padding-top: 10vh;
-}
+
+
+
 .section4 {
     padding-bottom: 50px;
     min-height: auto;
+    padding-top: 45px;
 }
 footer .content {
   max-width: 1490px;

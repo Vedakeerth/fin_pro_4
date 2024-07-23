@@ -189,6 +189,14 @@ html {
   --background-img: url('../Image/bg1-B.jpg');
   --review-bg: #2828289e; /*for review bg*/
 }  
+/*--------------------------------------------------*/
+
+@media (max-width: 550px) {
+  .icon-bar{
+    display: none;
+  }
+}
+
 /*---------------------------------------------------*/
   
 .title-nav{
@@ -632,6 +640,7 @@ footer .bottom-details .bottom_text{
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .bottom-details .bottom_text span,
 .bottom-details .bottom_text a{
@@ -839,8 +848,10 @@ a:hover {
 .por_2 {
   font-size: 14px;
   margin: 0px;
-  margin-top: 30px;
-  margin-bottom: 18px;
+  margin-top: 55px;
+}
+#box1{
+  height: 38vh;
 }
 .process-btn {
   padding: 10px 25px;

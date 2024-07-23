@@ -307,6 +307,12 @@ p{
 .products .printer-s h1{
   text-align: right;
 }
+
+@media (max-width: 550px) {
+  .icon-bar{
+    display: none;
+  }
+}
    
 
 /*---------------Footer-----------------*/
@@ -508,6 +514,7 @@ footer .bottom-details .bottom_text{
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .bottom-details .bottom_text span,
 .bottom-details .bottom_text a{
