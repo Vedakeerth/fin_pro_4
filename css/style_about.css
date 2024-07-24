@@ -800,7 +800,7 @@ footer .bottom-details .bottom_text{
 .bottom-details .bottom_text a{
   font-size: 14px;
   font-weight: 300;
-  color: #a1a6a7;
+  color: #e5eced;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -1222,6 +1222,7 @@ a:hover {
 .box4 {
   border-radius: 20px;
   height: 122vh;
+  margin-left: 30px;
 }
 .box4 h2 {
   font-size: 30px;
@@ -1262,4 +1263,32 @@ footer .content {
   max-width: 1490px;
   padding: 10px 0px 5px 30px;
 }
+}
+
+@media (max-width: 720px){
+ #box-img{
+  width: 36.5vh;
+ }
+}
+
+/* @media (max-width: 520px){
+  #box-img{
+    width: 45vh;
+  }
+} */
+
+@media (max-width: 385px){
+  #box-mig{
+    width:39vh;
+  }
+  .box1{
+    left: 96.5%;
+    width: 330px;
+  }
+  .box2{
+    width: 330px;
+  }
+  .box4{
+    height: 130vh;
+  }
 }

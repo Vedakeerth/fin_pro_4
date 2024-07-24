@@ -973,3 +973,18 @@ footer .content {
 
 
 }
+
+
+@media (max-width: 385px){
+  .what p{
+    text-align: justify;
+    padding-left: 20px;
+  }
+  .details-pd-1{
+    min-height: 98vh;
+  }
+  .what-1 img {
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+}

@@ -741,11 +741,10 @@ section#body-contant {
   margin-top: 20px;
 }
 
+}
 
-
-
-
-
-
-
+@media (max-width: 385px){
+  .box .image img{
+    height: 250px;
+  }
 }
