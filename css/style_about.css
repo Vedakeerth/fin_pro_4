@@ -1282,7 +1282,8 @@ footer .content {
     width:39vh;
   }
   .box1{
-    left: 96.5%;
+    margin-left: 0px;
+    left: 10%;
     width: 330px;
   }
   .box2{
