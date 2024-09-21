@@ -201,78 +201,6 @@ html {
 
 /*---------------------------------------------------*/
 
-/*------Scoial Media Links----*/
-.icon-bar {
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	z-index: 10;
-}
-
-.icon-bar a {
-	text-decoration: none;
-	width: 148px;
-	/*  background: #3b5999; */
-	color: #fff;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 10px;
-  padding-right: 7px;
-  font-size: 16px;
-	transform: translateX(-98px);
-	-webkit-transform: translateX(-98px);
-	-ms-transform: translateX(-98px);
-	transition: all 0.5s linear;
-	-webkit-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
-}
-
-.facebook {
-	background: #3b5998;
-}
-
-.twitter {
-	background: #00aced;
-}
-
-.instagram {
-	background: #e4405f;
-}
-
-.youtube {
-	background: #cd201f;
-}
-
-.linkedin {
-	background: #0077B5;
-}
-
-
-.icon-bar a i {
-	padding-left: 20px;
-	font-size: 30px !important;
-	animation: letszoom 3s linear alternate-reverse infinite;
-}
-
-@keyframes letszoom {
-	from {
-		transform: scale(0.8);
-	}
-
-	to {
-		transform: scale(1);
-	}
-
-}
-
-a:hover {
-	transform: translateX(0);
-	-webkit-transform: translateX(0);
-	-ms-transform: translateX(0);
-}
 
 /*---------nav title link-------------*/
 .title{
@@ -300,104 +228,224 @@ a:hover {
 
 /*------------Photo Gallery-------------*/
 
-.box-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 10px;
-  margin-top: 0px;
-  margin-left: 30px;
-  margin-right: 20px;
-  margin-bottom: 60px;
-  padding-left: 15px;
+/* styles.css */
+/* Basic styling */
+
+/* Product Container */
+#productContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 16px; /* Space between items */
+  padding: 16px;
 }
 
-.box{
-  flex: 1 1 280px;
-  border: 1px solid rgba(0, 0, 0, .3);
-  position: relative;
-  overflow: hidden;
-  margin: 20px;
-  backdrop-filter: blur(10px);
+/* Product Styles */
+.product {
+  background: #f9f9f924; /* Example background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Inner padding */
+  /* text-align: center;    Center text */
 }
 
-.box .image{
-  padding: 10px;
-  text-align: center;
-}
-
-.box .image img{
-  height: 250px;
-  width: auto;
-  object-fit: cover;
-  filter: drop-shadow(0 3px 5px rgba(0,0,0,.7));
-}
-
-.box .info .title{
-  padding: 10px;
-  font-size: 18px;
-}
-
-.box .info .subInfo{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 10px;
-  border-top: 1px solid rgb(0, 0, 0, .3);
-}
-
-.box .info .subInfo .price{
-  color: #ff3300;
-  font-size: 20px;
-}
-
-.box .info .subInfo .price span {
-  font-size: 15px;
-  color: #999;
-  text-decoration: line-through;
-}
-
-.box .info .subInfo .stars i{
-  color: #31a3d8;
-  font-size: 17px;
-}
-
-.box .overlayer{
-  position: absolute;
-  top: 0; left: 0;
+.product-img {
+  width: 280px;
   height: 280px;
+  object-fit: cover;
+}
+
+.quick-view-btn {
+  padding: 10px 5px 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Image Container */
+.image-container {
+  position: relative; /* Position relative for absolute positioning of overlay */
+}
+
+/* Overlay Styles */
+.overlay {
+  position: absolute;
+  top: 10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+  display: none; /* Hidden by default */
+  flex-direction: column; /* Stack buttons vertically */
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* Show overlay on hover */
+.product:hover .overlay {
+  display: flex; /* Show overlay when hovering over the product */
+}
+.share-btn, .like-btn {
+  background-color: rgba(255, 255, 255, 0.9); 
+}
+
+/* Button Styles */
+.share-btn, .like-btn {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for buttons */
+  border: none;
+  cursor: pointer;
+  width: 40px; /* Set width for circular shape */
+  height: 40px; /* Set height for circular shape */
+  border-radius: 50%; /* Make buttons circular */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin: 8px 0; /* Increased space between buttons */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+
+}
+
+/* Hover effect for buttons */
+.share-btn:hover, .like-btn:hover {
+  background-color: rgba(230, 230, 230, 0.8); /* Slightly darker background on hover */
+}
+/* Like button clicked state */
+.like-btn.active {
+  color: red; /* Change color when liked */
+}
+/* Icon Styles */
+.share-btn i, .like-btn i {
+  color: #333; /* Default icon color */
+  transition: color 0.3s; /* Smooth transition for icon color */
+}
+
+
+/* Add these styles to style.css */
+
+.buy-now-btn, .share-btn {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green for Buy Now */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.share-btn {
+    background-color: #007bff; /* Blue for Share */
+    padding: 5px 20px;
+}
+
+.like-btn:hover {
+    color: red;
+}
+
+.like-count {
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 20px 10px 0px 40px;
+}
+
+/* Button Styles */
+.quick-view-btn, .share-btn, .like-btn {
+  background-color: rgba(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Icon size */
+  color: #333; /* Default icon color */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Hover effects */
+.quick-view-btn:hover, .share-btn:hover {
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.share-btn:hover {
+  color: #00af4f; /* Change color on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.like-btn:hover {
+  color: red; /* Change color on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.buy-now-btn {
+  padding: 10px 20px; /* Adjust for the Buy Now button */
+  background-color: #28a745; /* Green for Buy Now */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+/* Customize the like button styles if needed */
+
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, .3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: none;
-  transform: scale(0);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.box:hover .overlayer{
-  transform: scale(1);
+.modal-content {
+  background-color: #fff;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 62%;
+  height: 90%;
+  text-align: center;
+  border-radius: 12px;
 }
 
-.box .overlayer a{
-  color: #666;
-  background: #fff;
-  margin: 10px;
-  padding: 13px 15px;
-  font-size: 25px;
-  transform: translateY(-150px);
-  transition-property: transform;
-  transition-delay: calc(.1s * var(--i));
+.modal-img {
+  width: 100%;
+  height: auto;
 }
 
-.box .overlayer a:hover{
-  color: #31a3d8;
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.box:hover .overlayer a{
-  transform: translateY(0px);
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
 }
+
+/* Make it responsive */
+@media (max-width: 1200px) {
+  #productContainer {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for screens ≤ 1200px */
+  }
+}
+@media (max-width: 900px) {
+  #productContainer {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for screens ≤ 900px */
+  }
+}
+
+@media (max-width: 600px) {
+  #productContainer {
+      grid-template-columns: 1fr; /* 1 column for screens ≤ 600px */
+  }
+}
+
+/* ------------------------------------------------------- */
+
+
+
+/* Mobile Resp. */
 
 @media (max-width: 900px){
   .box .image img{
