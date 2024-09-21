@@ -112,6 +112,17 @@ html {
   .nav-links ul li:hover::after{
     width: 100%;
   }
+
+  /* Highlight the Gallery link */
+
+#gallery-link {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(153deg, rgba(255,0,0,1) 0%, rgba(47,71,223,1) 50%, rgba(0,212,255,1) 100%);  /* Highlight color */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
   
   
   @media (min-aspect-ratio: 16/9){
