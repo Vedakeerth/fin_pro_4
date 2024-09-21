@@ -113,7 +113,7 @@ const products = [
 
 // GitHub Gist ID and Token
 const GIST_ID = '5da685392f8665a4249daea968e7af2d';
-const GITHUB_TOKEN = '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'; // Make sure to keep this secure
+const GITHUB_TOKEN = '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'; // Make sure to keep this secure
 
 // Load likes from GitHub Gist
 async function loadLikes() {
@@ -159,6 +159,7 @@ async function saveLikes() {
         console.error('Error saving likes:', error);
     }
 }
+
 
 // Function to render products
 function renderProducts() {
@@ -244,4 +245,31 @@ window.onclick = function(event) {
 window.onload = function() {
     loadLikes();
     renderProducts();
+};
+
+// Load likes from GitHub Gist
+async function loadLikes() {
+    try {
+        const response = await fetch(`https://api.github.com/gists/${GIST_ID}`);
+        const data = await response.json();
+        const likesData = JSON.parse(data.files['likes.json'].content);
+
+        // Initialize likes for each product
+        products.forEach(product => {
+            if (likesData[product.id] !== undefined) {
+                product.likes = likesData[product.id]; // Load the stored likes
+            } else {
+                product.likes = 0; // Default to 0 if not set
+            }
+        });
+    } catch (error) {
+        console.error('Error loading likes:', error);
+    }
+}
+
+// Call the function to load likes and render the products when the page loads
+window.onload = function() {
+    loadLikes()
+        .then(renderProducts) // Render products after likes are loaded
+        .catch(error => console.error('Error during initialization:', error));
 };
