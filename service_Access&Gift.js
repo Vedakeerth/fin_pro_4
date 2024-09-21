@@ -6,8 +6,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1lgImTI5jNX3AcEmwKwULKpVpJvbhCIJe",
         description: "Naruto Miniature & Wall-Mounted shelf. It was include the two Products. Naruto Miniature and Wall-Mounted shelf. There are 3 Type of Size for both products are S, M, L also Custom sizes are available",
         likes: 0,
-        link: "Gifts Products Pages/Groot.html", // Link to the external HTML for the iframe
-        b_link: "https://wa.me/p/8213195935359813/919047573454"
+        link: "Gifts Products Pages/Groot.html" // Link to the external HTML for the iframe
     },
     {
         id: 2,
@@ -15,8 +14,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1RNQmtyV-sbdPEJ6mWQJwyIEiIk5zpZ8Q",
         description: "This is the description for Product 2.",
         likes: 0,
-        link: "Gifts Products Pages/Penguin.html",
-        b_link: "https://wa.me/p/8213195935359813/919047"
+        link: "Gifts Products Pages/Penguin.html"
     },
     {
         id: 3,
@@ -24,8 +22,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1thl0o5yXDTfZfAghC-GYs8KiUtiUHZtE",
         description: "This is the description for Product 3.",
         likes: 0,
-        link: "Gifts Products Pages/Voronoi#Lamp.html",
-        b_link: ""
+        link: "Gifts Products Pages/Voronoi#Lamp.html"
     },
     {
         id: 4,
@@ -33,8 +30,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1MXxF4W7icETmuTwmwfqs_Nq59FfQpbvU",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/F1#Car#Kit.html",
-        b_link: "https://wa.me/p/8213195935359813/919047"
+        link: "Gifts Products Pages/F1#Car#Kit.html"
     },
     {
         id: 5,
@@ -42,8 +38,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1kd9rlRy6sHwb8CyvI8jXUnqnQWKZiGCz",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/Mother's#Day#Gift.html",
-        b_link: ""
+        link: "Gifts Products Pages/Mother's#Day#Gift.html"
     },
     {
         id: 6,
@@ -51,8 +46,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1fyeg8N8xUNZmCn1ChpD3vd_ldWL3wMpj",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/Candle#Holder.html",
-        b_link: ""
+        link: "Gifts Products Pages/Candle#Holder.html"
     },
     {
         id: 7,
@@ -60,8 +54,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1Ufaz1pxtKhrE-MVODlwSpHceYuYBrTu2",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/Little#Mummy.html",
-        b_link: ""
+        link: "Gifts Products Pages/Little#Mummy.html"
     },
     {
         id: 8,
@@ -69,8 +62,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1JTQJkT9OfWLoBRvzp634jHEkaOhCZS-t",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/Scarlet#Witch.html",
-        b_link: ""
+        link: "Gifts Products Pages/Scarlet#Witch.html"
     },
     {
         id: 9,
@@ -78,8 +70,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1Y9Hmgh9T2gpdlcYg7ONLDOUBDrIW3UO9",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/Party#Glass.html",
-        b_link: ""
+        link: "Gifts Products Pages/Party#Glass.html"
     },
     {
         id: 10,
@@ -87,8 +78,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1XZ_IwseIBPkbUx5XboQyhHN5vWhGtsQW",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/Wall-Mounted#Shelf.html",
-        b_link: ""
+        link: "Gifts Products Pages/Wall-Mounted#Shelf.html"
     },
     {
         id: 11,
@@ -96,8 +86,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1RFJG93--Sv48C6ZLSaE3qVWDYSgWaaZH",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/Naruto#Miniature.html",
-        b_link: ""
+        link: "Gifts Products Pages/Naruto#Miniature.html"
     },
     {
         id: 12,
@@ -105,58 +94,78 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1MXxF4W7icETmuTwmwfqs_Nq59FfQpbvU",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/Naruto#Miniature#&#Wall-Mounted#Shelf#(Combo).html",
-        b_link: ""
+        link: "Gifts Products Pages/Naruto#Miniature#&#Wall-Mounted#Shelf#(Combo).html"
     }
 ];
 
 
 // GitHub Gist ID and Token
 const GIST_ID = '5da685392f8665a4249daea968e7af2d';
+const GITHUB_API_URL = `https://api.github.com/Vedakeerth/${GIST_ID}`;
 const GITHUB_TOKEN = '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'; // Make sure to keep this secure
 
-// Load likes from GitHub Gist
-async function loadLikes() {
-    try {
-        const response = await fetch(`https://api.github.com/gists/${GIST_ID}`);
-        const data = await response.json();
-        const likesData = JSON.parse(data.files['likes.json'].content);
 
-        products.forEach(product => {
-            if (likesData[product.id]) {
-                product.likes = likesData[product.id];
+// Fetch likes from Gist
+async function fetchLikes() {
+    try {
+        const response = await fetch(GITHUB_API_URL, {
+            headers: {
+                'Authorization': `token ${TOKEN}`
             }
         });
+        const gistData = await response.json();
+        const likesData = JSON.parse(gistData.files['likes.json'].content);
+        
+        products.forEach(product => {
+            product.likes = likesData[product.id] || 0;
+        });
+        
+        renderProducts();
     } catch (error) {
-        console.error('Error loading likes:', error);
+        console.error('Error fetching likes:', error);
     }
 }
 
-
-// Save likes to GitHub Gist
-async function saveLikes() {
+// Save updated likes to Gist
+async function updateLikesInGist() {
     const likesToStore = {};
     products.forEach(product => {
         likesToStore[product.id] = product.likes;
     });
 
+    const updatedGist = {
+        files: {
+            'likes.json': {
+                content: JSON.stringify(likesToStore, null, 2)
+            }
+        }
+    };
+
     try {
-        await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+        const response = await fetch(GITHUB_API_URL, {
             method: 'PATCH',
             headers: {
-                'Authorization': `token ${GITHUB_TOKEN}`,
-                'Content-Type': 'application/json',
+                'Authorization': `token ${TOKEN}`,
+                'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                files: {
-                    'likes.json': {
-                        content: JSON.stringify(likesToStore)
-                    }
-                }
-            }),
+            body: JSON.stringify(updatedGist)
         });
+
+        if (!response.ok) {
+            throw new Error('Failed to update likes in Gist');
+        }
     } catch (error) {
-        console.error('Error saving likes:', error);
+        console.error('Error updating likes in Gist:', error);
+    }
+}
+
+// Like a product
+async function likeProduct(productId) {
+    const product = products.find(p => p.id === productId);
+    if (product) {
+        product.likes++;
+        await updateLikesInGist(); // Save updated likes to Gist
+        renderProducts(); // Re-render products to update the like count
     }
 }
 
@@ -182,7 +191,7 @@ function renderProducts() {
                 </div>
             </div>
             <h2 class="product-title">${product.name}</h2>
-            <button class="buy-now-btn" onclick="window.location.href='${product.b_link}'">
+            <button class="buy-now-btn" onclick="window.location.href='${product.link}'">
                 Buy Now
             </button>
             <button class="quick-view-btn" onclick="openQuickView(${product.id})">
@@ -241,7 +250,7 @@ window.onclick = function(event) {
 }
 
 // Call the function to load likes and render the products when the page loads
+// Load the likes when the page loads
 window.onload = function() {
-    loadLikes();
-    renderProducts();
+    fetchLikes(); // Fetch likes from Gist when the page loads
 };
