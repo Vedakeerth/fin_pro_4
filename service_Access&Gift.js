@@ -104,6 +104,8 @@ const GIST_ID = '5da685392f8665a4249daea968e7af2d';
 const GITHUB_API_URL = `https://api.github.com/Vedakeerth/${GIST_ID}`;
 const GITHUB_TOKEN = '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'; // Make sure to keep this secure
 
+// Global variable to store fetched likes
+let likesData = {};
 
 // Fetch likes from Gist
 async function fetchLikes() {
@@ -114,13 +116,14 @@ async function fetchLikes() {
             }
         });
         const gistData = await response.json();
-        const likesData = JSON.parse(gistData.files['likes.json'].content);
-        
+        likesData = JSON.parse(gistData.files['likes.json'].content);
+
+        // Ensure each product gets the corresponding like count from Gist
         products.forEach(product => {
             product.likes = likesData[product.id] || 0;
         });
-        
-        renderProducts();
+
+        renderProducts(); // Render products after fetching likes
     } catch (error) {
         console.error('Error fetching likes:', error);
     }
@@ -128,15 +131,15 @@ async function fetchLikes() {
 
 // Save updated likes to Gist
 async function updateLikesInGist() {
-    const likesToStore = {};
+    // Update the likes data based on current product state
     products.forEach(product => {
-        likesToStore[product.id] = product.likes;
+        likesData[product.id] = product.likes;
     });
 
     const updatedGist = {
         files: {
             'likes.json': {
-                content: JSON.stringify(likesToStore, null, 2)
+                content: JSON.stringify(likesData, null, 2) // Save formatted JSON
             }
         }
     };
@@ -163,7 +166,7 @@ async function updateLikesInGist() {
 async function likeProduct(productId) {
     const product = products.find(p => p.id === productId);
     if (product) {
-        product.likes++;
+        product.likes++; // Increment the like count locally
         await updateLikesInGist(); // Save updated likes to Gist
         renderProducts(); // Re-render products to update the like count
     }
