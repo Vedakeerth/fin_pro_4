@@ -112,7 +112,7 @@ async function fetchLikes() {
     try {
         const response = await fetch(GITHUB_API_URL, {
             headers: {
-                'Authorization': `token ${TOKEN}`
+                'Authorization': `token ${GITHUB_TOKEN}`
             }
         });
         const gistData = await response.json();
@@ -148,7 +148,7 @@ async function updateLikesInGist() {
         const response = await fetch(GITHUB_API_URL, {
             method: 'PATCH',
             headers: {
-                'Authorization': `token ${TOKEN}`,
+                'Authorization': `token ${GITHUB_TOKEN}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(updatedGist)
