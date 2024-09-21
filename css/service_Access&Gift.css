@@ -449,6 +449,9 @@ html {
 @media (max-width: 600px) {
   #productContainer {
       grid-template-columns: 1fr; /* 1 column for screens ≤ 600px */
+      text-align: center;  /* Center the text */
+      gap: 12vh;  /* Add some space between the products */
+
   }
 }
 
