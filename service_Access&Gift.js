@@ -24,7 +24,7 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1thl0o5yXDTfZfAghC-GYs8KiUtiUHZtE",
         description: "This is the description for Product 3.",
         likes: 0,
-        link: "Gifts Products Pages/Voronoi#Lamp.html",
+        link: "Gifts Products Pages/VoronoiLamp.html",
         b_link: "https://wa.me/p/7932901360124767/919047573454"
     },
     {
@@ -33,8 +33,8 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1MXxF4W7icETmuTwmwfqs_Nq59FfQpbvU",
         description: "This is the description for Product 4.",
         likes: 0,
-        link: "Gifts Products Pages/F1#Car#Kit.html",
-        b_link: "https://wa.me/p/8213195935359813/919047"
+        link: "Gifts Products Pages/F1CarKit.html",
+        b_link: "https://wa.me/p/7572674362836550/919047573454"
     },
     {
         id: 5,
@@ -42,8 +42,8 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1kd9rlRy6sHwb8CyvI8jXUnqnQWKZiGCz",
         description: "This is the description for Product 5.",
         likes: 0,
-        link: "Gifts Products Pages/Mother's#Day#Gift.html",
-        b_link: ""
+        link: "Gifts Products Pages/Mother'sDayGift.html",
+        b_link: "https://wa.me/p/7385093804925494/919047573454"
     },
     {
         id: 6,
@@ -51,8 +51,8 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1fyeg8N8xUNZmCn1ChpD3vd_ldWL3wMpj",
         description: "This is the description for Product 6.",
         likes: 0,
-        link: "Gifts Products Pages/Candle#Holder.html",
-        b_link: ""
+        link: "Gifts Products Pages/CandleHolder.html",
+        b_link: "https://wa.me/p/7843600422359650/919047573454"
     },
     {
         id: 7,
@@ -60,8 +60,8 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1Ufaz1pxtKhrE-MVODlwSpHceYuYBrTu2",
         description: "This is the description for Product 7.",
         likes: 0,
-        link: "Gifts Products Pages/Little#Mummy.html",
-        b_link: ""
+        link: "Gifts Products Pages/LittleMummy.html",
+        b_link: "https://wa.me/p/7744611658969743/919047573454"
     },
     {
         id: 8,
@@ -69,8 +69,8 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1JTQJkT9OfWLoBRvzp634jHEkaOhCZS-t",
         description: "This is the description for Product 8.",
         likes: 0,
-        link: "Gifts Products Pages/Scarlet#Witch.html",
-        b_link: ""
+        link: "Gifts Products Pages/ScarletWitch.html",
+        b_link: "https://wa.me/p/8140247956041138/919047573454"
     },
     {
         id: 9,
@@ -78,8 +78,8 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1Y9Hmgh9T2gpdlcYg7ONLDOUBDrIW3UO9",
         description: "This is the description for Product 9.",
         likes: 0,
-        link: "Gifts Products Pages/Party#Glass.html",
-        b_link: ""
+        link: "Gifts Products Pages/PartyGlass.html",
+        b_link: "https://wa.me/p/8211045055622705/919047573454"
     },
     {
         id: 10,
@@ -87,8 +87,8 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1XZ_IwseIBPkbUx5XboQyhHN5vWhGtsQW",
         description: "This is the description for Product 10.",
         likes: 0,
-        link: "Gifts Products Pages/Wall-Mounted#Shelf.html",
-        b_link: ""
+        link: "Gifts Products Pages/Wall-MountedShelf.html",
+        b_link: "https://wa.me/p/7777421029042559/919047573454"
     },
     {
         id: 11,
@@ -96,8 +96,8 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1RFJG93--Sv48C6ZLSaE3qVWDYSgWaaZH",
         description: "This is the description for Product 11.",
         likes: 0,
-        link: "Gifts Products Pages/Naruto#Miniature.html",
-        b_link: ""
+        link: "Gifts Products Pages/NarutoMiniature.html",
+        b_link: "https://wa.me/p/8152953401427496/919047573454"
     },
     {
         id: 12,
@@ -105,8 +105,8 @@ const products = [
         image: "https://drive.google.com/thumbnail?id=1QrMlV4QvvEELVnTPXAnjMZsoIEikcEpO",
         description: "This is the description for Product 12.",
         likes: 0,
-        link: "Gifts Products Pages/Naruto#Miniature#&#Wall-Mounted#Shelf#(Combo).html",
-        b_link: ""
+        link: "Gifts Products Pages/NarutoMiniature&Wall-MountedShelf(Combo).html",
+        b_link: "https://wa.me/p/26962832933315573/919047573454"
     }
 ];
 
